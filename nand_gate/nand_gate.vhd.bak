@@ -1,0 +1,24 @@
+ library library_name;
+ use library_name.package_name.all;
+
+  entity entity_name is
+   [generic (
+     cons_name1: const_type const_value;
+     cons_name2: const_type const_value;
+     ...
+     cons_nameN: const_type const_value);]
+   [port (
+     signal_name1: mode signal_type;
+     signal_name2: mode signal_type;
+     ...
+     signal_nameN: mode signal_type);]
+   [declarative_part]
+ [begin
+   statement_part]
+ end [entity] [entity_name];
+
+ architecture arch_name of entity_name is
+   [declarative_part]
+ begin
+   statement_part
+ end [architecture] [arch_name];

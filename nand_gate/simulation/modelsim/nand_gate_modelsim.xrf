@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, /home/aluno/ELD2/nand_gate/nand_gate.vhd
+source_file = 1, /home/aluno/ELD2/nand_gate/ckt2.vhd
+source_file = 1, /opt/altera/intelFPGA/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/altera/intelFPGA/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/altera/intelFPGA/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/altera/intelFPGA/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, /home/aluno/ELD2/nand_gate/db/nand_gate.cbx.xml
+design_name = hard_block
+design_name = ckt2
+instance = comp, \y~output\, y~output, ckt2, 1
+instance = comp, \b~input\, b~input, ckt2, 1
+instance = comp, \a~input\, a~input, ckt2, 1
+instance = comp, \y~0\, y~0, ckt2, 1
+instance = comp, \c~input\, c~input, ckt2, 1
+instance = comp, \d~input\, d~input, ckt2, 1
