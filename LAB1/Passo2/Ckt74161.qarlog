@@ -1,0 +1,15 @@
+Quartus Prime Archive log --	C:/Users/thays/Desktop/repo/ELD_IFSC/LAB1/Ckt74161.qarlog
+
+Archive:	C:/Users/thays/Desktop/repo/ELD_IFSC/LAB1/Ckt74161.qar
+Date:		Sun Oct  6 16:03:33 2024
+Quartus Prime		23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thays/Desktop/repo/ELD_IFSC/LAB1/Ckt74161.bdf
+C:/Users/thays/Desktop/repo/ELD_IFSC/LAB1/Ckt74161.qpf
+C:/Users/thays/Desktop/repo/ELD_IFSC/LAB1/Ckt74161.qsf
+c:/intelfpga_lite/23.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 4 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
