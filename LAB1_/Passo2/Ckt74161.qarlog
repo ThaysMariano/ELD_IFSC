@@ -1,0 +1,15 @@
+Quartus Prime Archive log --	/home/aluno/ELD_IFSC/LAB1_/Ckt74161.qarlog
+
+Archive:	/home/aluno/ELD_IFSC/LAB1_/Ckt74161.qar
+Date:		Tue Oct  8 14:12:47 2024
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/home/aluno/ELD_IFSC/LAB1_/Ckt74161.bdf
+/home/aluno/ELD_IFSC/LAB1_/Ckt74161.qpf
+/home/aluno/ELD_IFSC/LAB1_/Ckt74161.qsf
+/opt/altera/intelFPGA/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 4 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
