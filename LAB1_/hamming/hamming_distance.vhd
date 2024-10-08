@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 entity hamming_distance is
 	generic (
-		N: 	natural := 25; 
-		M: 	natural := 5); -- M = ceil(log2(N))
+		N: 	natural := 4; 
+		M: 	natural := 2); -- M = ceil(log2(N))
 	port(
 		a, b :	in  std_logic_vector (N-1 downto 0);
 		y :	out std_logic_vector (M-1 downto 0));
