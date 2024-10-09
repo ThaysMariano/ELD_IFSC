@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/thays/Desktop/Logica_Pura/simulation/questa
+Ccfg_ifsc
+emux4x1
+av_logica_pura
+DAx4 work 6 mux4x1 13 v_logica_pura 22 IaM35J1De]cmKGTSRDe4K1
+Z1 DEx4 work 6 mux4x1 0 22 eW57WeHAeV7_V`Dm2jF5]1
+Z2 w1728419328
+R0
+Z3 8../../mux4x1.vhd
+Z4 F../../mux4x1.vhd
+l0
+L43
+V8SHV8Pozjm_lR1VoUFld<3
+!s100 ?^X8KU;acP=hDZ4G>V;z;2
+Z5 OV;C;10.5b;63
+31
+Z6 !s110 1728419946
+!i10b 0
+Z7 !s108 1728419946.000000
+Z8 !s90 -reportprogress|300|-93|-work|work|../../mux4x1.vhd|
+Z9 !s107 ../../mux4x1.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Emux4x1
+R2
+R0
+R3
+R4
+l0
+L1
+VeW57WeHAeV7_V`Dm2jF5]1
+!s100 `N=e[n8BklbB285ke2@Sg2
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Av_with_select
+R1
+l33
+L32
+Z12 VfF7RS4Qeh3WV@;C?@[;aY3
+Z13 !s100 W:]f7011dXo611ES[oeE33
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Av_when_else
+R1
+l24
+L23
+Z14 V]^Jl`ZSkdWZnD1lNa9<FM3
+Z15 !s100 RC?ci8[bje<_H@PBJ^Q2H1
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Av_logica_pura
+R1
+l15
+L13
+Z16 VIaM35J1De]cmKGTSRDe4K1
+Z17 !s100 <>S[oMcg3:obaN_gff=ko2
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R9
+!i113 1
+R10
+R11

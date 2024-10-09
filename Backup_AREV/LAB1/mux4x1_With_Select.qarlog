@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	C:/Users/thays/Desktop/LAB1/mux4x1_With_Select.qarlog
+
+Archive:	C:/Users/thays/Desktop/LAB1/mux4x1_With_Select.qar
+Date:		Tue Oct  8 17:11:37 2024
+Quartus Prime		23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thays/Desktop/LAB1/mux4x1.qpf
+C:/Users/thays/Desktop/LAB1/mux4x1.qsf
+C:/Users/thays/Desktop/LAB1/mux4x1.vhd
+C:/Users/thays/Desktop/LAB1/simulation/questa/tb_mux4x1.do
+C:/Users/thays/Desktop/LAB1/simulation/questa/wave.do
+c:/intelfpga_lite/23.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

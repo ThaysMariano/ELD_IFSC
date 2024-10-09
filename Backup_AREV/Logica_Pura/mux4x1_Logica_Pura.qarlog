@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	C:/Users/thays/Desktop/Logica_Pura/mux4x1_Logica_Pura.qarlog
+
+Archive:	C:/Users/thays/Desktop/Logica_Pura/mux4x1_Logica_Pura.qar
+Date:		Tue Oct  8 17:41:07 2024
+Quartus Prime		23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thays/Desktop/Logica_Pura/mux4x1.qpf
+C:/Users/thays/Desktop/Logica_Pura/mux4x1.qsf
+C:/Users/thays/Desktop/Logica_Pura/mux4x1.vhd
+C:/Users/thays/Desktop/Logica_Pura/simulation/questa/tb_mux4x1.do
+C:/Users/thays/Desktop/Logica_Pura/simulation/questa/wave.do
+c:/intelfpga_lite/23.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
