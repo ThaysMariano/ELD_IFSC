@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	C:/Users/thays/Desktop/novo/novo.qarlog
+
+Archive:	C:/Users/thays/Desktop/novo/novo.qar
+Date:		Tue Oct  1 00:51:34 2024
+Quartus Prime		23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thays/Desktop/novo/novo.qpf
+C:/Users/thays/Desktop/novo/novo.qsf
+C:/Users/thays/Desktop/novo/novo.vhd
+C:/Users/thays/Desktop/novo/simulation/questa/wave.do
+c:/intelfpga_lite/23.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

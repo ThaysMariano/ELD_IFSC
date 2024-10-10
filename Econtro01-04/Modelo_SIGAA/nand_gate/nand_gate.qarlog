@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	C:/Users/thays/Desktop/ProjetosQuartus/Modelo_SIGAA/nand_gate/nand_gate.qarlog
+
+Archive:	C:/Users/thays/Desktop/ProjetosQuartus/Modelo_SIGAA/nand_gate/nand_gate.qar
+Date:		Tue Oct  1 17:38:09 2024
+Quartus Prime		23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thays/Desktop/ProjetosQuartus/Modelo_SIGAA/nand_gate/nand_gate.do
+C:/Users/thays/Desktop/ProjetosQuartus/Modelo_SIGAA/nand_gate/nand_gate.qpf
+C:/Users/thays/Desktop/ProjetosQuartus/Modelo_SIGAA/nand_gate/nand_gate.qsf
+C:/Users/thays/Desktop/ProjetosQuartus/Modelo_SIGAA/nand_gate/nand_gate.vhd
+c:/intelfpga_lite/23.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
