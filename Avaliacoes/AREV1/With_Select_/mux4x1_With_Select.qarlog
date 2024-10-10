@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	C:/Users/thays/Desktop/With_Select_/mux4x1_With_Select.qarlog
+
+Archive:	C:/Users/thays/Desktop/With_Select_/mux4x1_With_Select.qar
+Date:		Wed Oct 09 09:44:07 2024
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thays/Desktop/With_Select_/mux4x1.qpf
+C:/Users/thays/Desktop/With_Select_/mux4x1.qsf
+C:/Users/thays/Desktop/With_Select_/mux4x1.vhd
+C:/Users/thays/Desktop/With_Select_/simulation/modelsim/tb_mux4x1_v3.do
+C:/Users/thays/Desktop/With_Select_/simulation/modelsim/wave_v3.do
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

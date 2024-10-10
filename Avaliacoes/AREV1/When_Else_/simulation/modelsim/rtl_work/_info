@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/thays/Desktop/When_Else_/simulation/modelsim
+Ccfg_ifsc
+emux4x1
+av_WHEN_ELSE
+DAx4 work 6 mux4x1 11 v_when_else 22 khcnSAk5L4B<?M_KI<0b^1
+Z1 DEx4 work 6 mux4x1 0 22 kG`g@6FL]@<iJE`fHHV5[1
+!i122 3
+Z2 w1728476747
+R0
+Z3 8../../mux4x1.vhd
+Z4 F../../mux4x1.vhd
+l0
+L45 1
+VbO]38agz;iSO:MzeV:fBQ2
+!s100 >BnDN[^;AkQ0OK1T?9P7a3
+Z5 OV;C;2020.1;71
+31
+Z6 !s110 1728477082
+!i10b 0
+Z7 !s108 1728477082.000000
+Z8 !s90 -reportprogress|300|-93|-work|work|../../mux4x1.vhd|
+Z9 !s107 ../../mux4x1.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Emux4x1
+R2
+!i122 3
+R0
+R3
+R4
+l0
+L3 1
+VkG`g@6FL]@<iJE`fHHV5[1
+!s100 0nYDca=93Sfh21C:RXS7@3
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Av_with_select
+R1
+!i122 3
+l35
+Z12 L34 9
+Z13 VOlKRfQfNDOk^]R2ShjYVM2
+Z14 !s100 @<aX?RUV5NmS^TM1kkLgG1
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Av_when_else
+R1
+!i122 3
+l26
+Z15 L25 7
+Z16 VkhcnSAk5L4B<?M_KI<0b^1
+Z17 !s100 c85::1Hz]jGR>JVNYnQcA1
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Av_logica_pura
+R1
+!i122 3
+l17
+Z18 L15 8
+Z19 VgJK=]j[MQ9eliZ>Z[n>K?3
+Z20 !s100 ?>3DV>G`>hi8JdZ?<@H4G0
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R9
+!i113 1
+R10
+R11

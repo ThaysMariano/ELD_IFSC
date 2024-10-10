@@ -1,0 +1,14 @@
+|mux4x1
+X[0] => Y.DATAB
+X[1] => Y.DATAB
+X[2] => Y.DATAB
+X[3] => Y.DATAA
+Sel[0] => Equal0.IN0
+Sel[0] => Equal1.IN1
+Sel[0] => Equal2.IN1
+Sel[1] => Equal0.IN1
+Sel[1] => Equal1.IN0
+Sel[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

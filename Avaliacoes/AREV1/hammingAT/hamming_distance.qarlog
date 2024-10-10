@@ -1,0 +1,18 @@
+Quartus Prime Archive log --	C:/Users/thays/Desktop/hammingAT/hamming_distance.qarlog
+
+Archive:	C:/Users/thays/Desktop/hammingAT/hamming_distance.qar
+Date:		Wed Oct 09 14:02:37 2024
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thays/Desktop/hammingAT/SDC1.sdc
+C:/Users/thays/Desktop/hammingAT/hamming_distance.qpf
+C:/Users/thays/Desktop/hammingAT/hamming_distance.qsf
+C:/Users/thays/Desktop/hammingAT/hamming_distance.vhd
+C:/Users/thays/Desktop/hammingAT/simulation/modelsim/tb_hamming_distance_.do
+C:/Users/thays/Desktop/hammingAT/simulation/modelsim/wave_hamming.do
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,124 @@
+# Reading pref.tcl
+# do mux4x1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/thays/Desktop/With_Select_/mux4x1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:41:45 on Oct 09,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/With_Select_/mux4x1.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity mux4x1
+# -- Compiling architecture v_logica_pura of mux4x1
+# -- Compiling architecture v_WHEN_ELSE of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling architecture v_WITH_SELECT of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling configuration cfg_ifsc
+# -- Loading entity mux4x1
+# -- Loading architecture v_WITH_SELECT of mux4x1
+# End time: 09:41:45 on Oct 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.mux4x1(v_with_select)
+# vsim work.mux4x1(v_with_select) 
+# Start time: 09:41:59 on Oct 09,2024
+# Loading std.standard
+# Loading work.mux4x1(v_with_select)
+do tb_mux4x1_v3.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:42:13 on Oct 09,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/With_Select_/mux4x1.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity mux4x1
+# -- Compiling architecture v_logica_pura of mux4x1
+# -- Compiling architecture v_WHEN_ELSE of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling architecture v_WITH_SELECT of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling configuration cfg_ifsc
+# -- Loading entity mux4x1
+# -- Loading architecture v_WITH_SELECT of mux4x1
+# End time: 09:42:13 on Oct 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:42:13 on Oct 09,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/With_Select_/mux4x1.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity mux4x1
+# -- Compiling architecture v_logica_pura of mux4x1
+# -- Compiling architecture v_WHEN_ELSE of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling architecture v_WITH_SELECT of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling configuration cfg_ifsc
+# -- Loading entity mux4x1
+# -- Loading architecture v_WITH_SELECT of mux4x1
+# End time: 09:42:13 on Oct 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:42:16 on Oct 09,2024, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0
+# vsim work.mux4x1(v_with_select) 
+# Start time: 09:42:16 on Oct 09,2024
+# Loading std.standard
+# Loading work.mux4x1(v_with_select)
+do tb_mux4x1_v3.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:43:09 on Oct 09,2024
+# vcom -reportprogress 300 -93 -work work ../../mux4x1.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity mux4x1
+# -- Compiling architecture v_logica_pura of mux4x1
+# -- Compiling architecture v_WHEN_ELSE of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling architecture v_WITH_SELECT of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling configuration cfg_ifsc
+# -- Loading entity mux4x1
+# -- Loading architecture v_WITH_SELECT of mux4x1
+# End time: 09:43:09 on Oct 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:43:09 on Oct 09,2024
+# vcom -reportprogress 300 -93 -work work ../../mux4x1.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity mux4x1
+# -- Compiling architecture v_logica_pura of mux4x1
+# -- Compiling architecture v_WHEN_ELSE of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling architecture v_WITH_SELECT of mux4x1
+# -- Loading entity mux4x1
+# -- Compiling configuration cfg_ifsc
+# -- Loading entity mux4x1
+# -- Loading architecture v_WITH_SELECT of mux4x1
+# End time: 09:43:09 on Oct 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:43:10 on Oct 09,2024, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0
+# vsim work.mux4x1(v_with_select) 
+# Start time: 09:43:10 on Oct 09,2024
+# Loading std.standard
+# Loading work.mux4x1(v_with_select)
+# End time: 09:43:28 on Oct 09,2024, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0

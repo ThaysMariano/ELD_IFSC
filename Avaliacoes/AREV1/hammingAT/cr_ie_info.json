@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "Debian GNU/Linux",
+		"os_version" : "12"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "action_id < m_icons.size()",
+		"source_file" : "/quartus/ace/acvq/acvqv/acvqv_ui_object_container.cpp",
+		"line" : "1826",
+		"stack_trace" : "\t0x7ff50b96350d: ace_acvq_acvqv + 0x8650d\n\t0x7ff50b94ebcc: ace_acvq_acvqv + 0x71bcc (_ZN15ACVQV_FRAME_WND6notifyEN28ACVQ_DATA_TRANSFER_INTERFACE19NOTIFY_MESSAGE_TYPEEPNS0_12MESSAGE_DATAE + 0x7ec)\n\t0x7ff50c3215c2: ace_acvq_acvqm + 0x8c5c2 (_ZN11ACVQM_MODEL12notify_peersEN28ACVQ_DATA_TRANSFER_INTERFACE19NOTIFY_MESSAGE_TYPEEPNS0_12MESSAGE_DATAE + 0x42)\n\t0x7ff50c3799f2: ace_acvq_acvqm + 0xe49f2 (_ZN21ACVQM_COMMAND_MANAGER20execute_icon_actionsEPSt6vectorIiSaIiEE + 0x52)\n\t0x7ff50ca0cfab: ace_acvq_acvqc + 0x6bfab (acvqc_execute_icon_actions + 0x134)\n\t0x7ff56524c987: tcl8.6 + 0x4c987 (TclNRRunCallbacks + 0x47)\n\t0x7ff56524e1da: tcl8.6 + 0x4e1da (TclEvalEx + 0x96a)\n\t0x7ff56524e4e6: tcl8.6 + 0x4e4e6 (Tcl_EvalEx + 0x16)\n\t0x7ff56524e50d: tcl8.6 + 0x4e50d (Tcl_Eval + 0x1d)\n\t0x7ff5764ddae1: ccl_atcl + 0x1aae1 (_Z13atcl_tcl_evalP10Tcl_InterpRKSs + 0x12d)\n\t0x7ff50b932a5c: ace_acvq_acvqv + 0x55a5c (_ZN25ACVQV_DEVICE_PAINT_WIDGET15mousePressEventEP11QMouseEvent + 0x1ec)\n\t0x7ff568865f2b: QtGui.so.4 + 0x265f2b (_ZN7QWidget5eventEP6QEvent + 0x46b)\n\t0x7ff56880484f: QtGui.so.4 + 0x20484f (_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent + 0xaf)\n\t0x7ff56880b0d3: QtGui.so.4 + 0x20b0d3 (_ZN12QApplication6notifyEP7QObjectP6QEvent + 0x3b3)\n\t0x7ff5811b5ac4: QtCore.so.4 + 0x1b5ac4 (_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent + 0x84)\n\t0x7ff568807ac5: QtGui.so.4 + 0x207ac5 (_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_Eb + 0x135)\n\t0x7ff56888e92a: QtGui.so.4 + 0x28e92a\n\t0x7ff56888d62a: QtGui.so.4 + 0x28d62a (_ZN12QApplication15x11ProcessEventEP7_XEvent + 0xe2a)\n\t0x7ff5688b8d62: QtGui.so.4 + 0x2b8d62\n\t0x7ff56c31c7a9: glib-2.0.so.0 + 0x547a9 (g_main_context_dispatch + 0x299)\n\t0x7ff56c31ca38: glib-2.0.so.0 + 0x54a38\n\t0x7ff56c31cacc: glib-2.0.so.0 + 0x54acc (g_main_context_iteration + 0x2c)\n\t0x7ff5811e8af5: QtCore.so.4 + 0x1e8af5 (_ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE + 0x65)\n\t0x7ff5688b889f: QtGui.so.4 + 0x2b889f\n\t0x7ff5811b4ad5: QtCore.so.4 + 0x1b4ad5 (_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE + 0x35)\n\t0x7ff5811b4ea8: QtCore.so.4 + 0x1b4ea8 (_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE + 0x128)\n\t0x7ff5811b9cc4: QtCore.so.4 + 0x1b9cc4 (_ZN16QCoreApplication4execEv + 0xb4)\n\t   0x401eab: quartus + 0x1eab (_Z8qgq_mainiPPKc + 0x7b)\n\t0x7ff57654fe30: ccl_msg + 0x3ee30 (_Z15msg_main_threadPv + 0x10)\n\t0x7ff56dba1acc: ccl_thr + 0x5acc (thr_final_wrapper + 0xc)\n\t0x7ff57654feef: ccl_msg + 0x3eeef (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7ff56f84af9c: ccl_mem + 0x9f9c (_Z18mem_thread_wrapperPFPvS_ES_ + 0x5c)\n\t0x7ff56dbd8b39: ccl_err + 0x8b39 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7ff56dba1b0f: ccl_thr + 0x5b0f (thr_thread_wrapper + 0x15)\n\t0x7ff576551ea1: ccl_msg + 0x40ea1 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xb2)\n\t   0x401f91: quartus + 0x1f91 (main + 0x26)\n\t0x7ff56be4624a: c.so.6 + 0x2724a\n\t0x7ff56be46305: c.so.6 + 0x27305 (__libc_start_main + 0x85)\n\t   0x401d39: quartus + 0x1d39\n",
+		"subsystem" : "ACVQV"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "20.1.1",
+		"build" : "720",
+		"edition" : "Standard Edition"
+	}
+}
