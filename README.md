@@ -67,3 +67,66 @@ CONFIGURATION <configuration_name> OF <entity_name> IS
 	FOR <architecture_name> END FOR;
 END CONFIGURATION;
 ```
+
+## Encontro 8
+### Flip-Flop e circuitos sequenciais
+
+
+```
+[rótulo:] PROCESS [(lista_de_sensibilidade)] [IS]
+             [parte_declarativa]
+         BEGIN
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+         END PROCESS [rótulo];
+
+```
+
+```
+[rótulo:] IF condição THEN
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+         ELSIF condição THEN
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+         ELSE
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+         END IF [rótulo];
+
+
+```
+
+```
+--Flip Flop tipo D com reset assincrono, sensivel a borda de subida.
+
+process (clock,reset)
+begin
+   if (reset = '1') then
+      q <= '0';
+-- elsif (clock'event and clock = '1') then or
+   elsif (rising_edge(clock)) then
+      q <= d;
+   end if;
+end process;
+```
+
+
+```
+--Flip Flop tipo D com preset assincrono e sinal de enable, sensivel a borda de descida.
+
+process (clock, preset)
+begin
+   if (preset = '1') then
+      q <= '1';
+   elsif (falling_edge(clock)) then
+      if (enable = '1') then
+         q <= d;
+      end if;
+   end if;
+end process;
+```
