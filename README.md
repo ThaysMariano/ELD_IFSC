@@ -3,7 +3,7 @@
 <!-- Não presente nos encontros 1 a 3 -->
 ## **Estrutura do código VHDL**
 
-- ### Declaração de biblioteca e pacotes
+- ### Declaração de Biblioteca e Pacotes
 ```
 library library_name;
 use library_name.package_name.all;
@@ -33,12 +33,35 @@ architecture arch_name of entity_name is
  end [architecture] [arch_name];
 ```
 
+- ### Configuração
+```
+CONFIGURATION <configuration_name> OF <entity_name> IS
+   FOR <architecture_name> END FOR;
+   FOR <architecture_name> END FOR;
+   FOR <architecture_name> END FOR;
+END CONFIGURATION;
+```
+ - - - 
+ - - -
+- ### Processos
+```
+[rótulo:] PROCESS [(lista_de_sensibilidade)] [IS]
+             [parte_declarativa]
+         BEGIN
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+         END PROCESS [rótulo];
+
+```
+
+
+
 
 ## Encontro 4
 ### Conhecer instruções 
 - WHEN_ELSE
 - WITH_SELECT
-- CONFIGURATION
 
 ```
 architecture v_WHEN_ELSE of mux4x1 is
@@ -62,44 +85,8 @@ end architecture;
 ```
 
 
-```
-CONFIGURATION <configuration_name> OF <entity_name> IS
-	FOR <architecture_name> END FOR;
-END CONFIGURATION;
-```
-
 ## Encontro 8
-### Flip-Flop e circuitos sequenciais
-
-
-```
-[rótulo:] PROCESS [(lista_de_sensibilidade)] [IS]
-             [parte_declarativa]
-         BEGIN
-             afirmação_sequencial;
-             afirmação_sequencial;
-             ...
-         END PROCESS [rótulo];
-
-```
-
-```
-[rótulo:] IF condição THEN
-             afirmação_sequencial;
-             afirmação_sequencial;
-             ...
-         ELSIF condição THEN
-             afirmação_sequencial;
-             afirmação_sequencial;
-             ...
-         ELSE
-             afirmação_sequencial;
-             afirmação_sequencial;
-             ...
-         END IF [rótulo];
-
-
-```
+### Flip-Flop e Circuitos Sequenciais
 
 ```
 --Flip Flop tipo D com reset assincrono, sensivel a borda de subida.
@@ -115,7 +102,6 @@ begin
 end process;
 ```
 
-
 ```
 --Flip Flop tipo D com preset assincrono e sinal de enable, sensivel a borda de descida.
 
@@ -130,3 +116,50 @@ begin
    end if;
 end process;
 ```
+
+- ### If Else
+
+```
+[rótulo:] IF condição THEN
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+         ELSIF condição THEN
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+         ELSE
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+         END IF [rótulo];
+```
+
+## Encontro 9
+### Latch D
+
+```
+--Latch tipo D com reset assincrono.
+process (enable, reset, d)
+begin
+   if (reset = '1') then
+      q <= '0';
+   elsif (enable='1') then
+      q <= d;
+   end if;
+end process;
+```
+
+### Modelo Registrador
+```
+process(clk,reset)
+ begin
+   if (reset='1') then
+      r_reg <= (others=>'0');
+   elsif (clk'event and clk='1') then
+      r_reg <= r_next;
+   end if;
+ end process;
+```
+
+
