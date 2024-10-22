@@ -27,12 +27,12 @@ end process;
  r_next <= r_reg + 1;
  
  -- output logic
- -- q <= std_logic_vector(r_reg);
- --  max_pulse <= '1' when r_reg="1111" else
- -- '0';
+  q <= std_logic_vector(r_reg);
+  max_pulse <= '1' when r_reg="1111" else
+  '0';
  
  -- output logic 0-7 8-15
-  q <= std_logic_vector(r_reg);
-  max_pulse <= '1' when r_reg<"1000" else
-  '0';
+ -- q <= std_logic_vector(r_reg);
+ -- max_pulse <= '1' when r_reg<"1000" else
+ -- '0';
 end two_seg_arch;
