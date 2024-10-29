@@ -1,5 +1,5 @@
-Analysis & Elaboration Status : Failed - Tue Oct 22 15:23:07 2024
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+Analysis & Elaboration Status : Successful - Tue Oct 29 11:09:09 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : binary_counter4_pulse
 Top-level Entity Name : binary_counter4_pulse
 Family : Cyclone IV E

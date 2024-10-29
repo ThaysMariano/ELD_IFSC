@@ -8,27 +8,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/aluno/ELD_IFSC/Contador 0-9/simulation/modelsim
+Z0 dC:/Users/thays/Desktop/repo/ELD_IFSC/Contador0-9/simulation/modelsim
 Ebinary_counter4_pulse
-Z1 w1729621194
+Z1 w1730210929
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z5 8/home/aluno/ELD_IFSC/Contador 0-9/binary_counter4_pulse.vhd
-Z6 F/home/aluno/ELD_IFSC/Contador 0-9/binary_counter4_pulse.vhd
+Z5 8C:/Users/thays/Desktop/repo/ELD_IFSC/Contador0-9/binary_counter4_pulse.vhd
+Z6 FC:/Users/thays/Desktop/repo/ELD_IFSC/Contador0-9/binary_counter4_pulse.vhd
 l0
-L4 1
-VImRn;Vf4e`K8?bz_=5I7f2
-!s100 lBK`n>1]NIlOFh=PLnizl1
+L5 1
+VC_[<cPAbJn3Y5ld]4@1SG3
+!s100 [ZJ0gI:m1OU;G8aM5HY9=2
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1729621211
+Z8 !s110 1730211477
 !i10b 1
-Z9 !s108 1729621211.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELD_IFSC/Contador 0-9/binary_counter4_pulse.vhd|
-!s107 /home/aluno/ELD_IFSC/Contador 0-9/binary_counter4_pulse.vhd|
+Z9 !s108 1730211477.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/thays/Desktop/repo/ELD_IFSC/Contador0-9/binary_counter4_pulse.vhd|
+!s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Contador0-9/binary_counter4_pulse.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
@@ -36,19 +36,19 @@ Atwo_seg_arch
 R2
 R3
 R4
-DEx4 work 21 binary_counter4_pulse 0 22 ImRn;Vf4e`K8?bz_=5I7f2
+DEx4 work 21 binary_counter4_pulse 0 22 C_[<cPAbJn3Y5ld]4@1SG3
 !i122 0
-l15
-L12 27
-V6dKV11Z18TfeOeIBlEF`73
-!s100 cNb^^YjbP3eQYz74FaYIb0
+l16
+L13 25
+VbhBG7lLlICV9mDfSePVTT0
+!s100 bM<g<RU:2z0ePXeK<VWZd0
 R7
 31
 R8
 !i10b 1
 R9
 R10
-Z13 !s107 /home/aluno/ELD_IFSC/Contador 0-9/binary_counter4_pulse.vhd|
+Z13 !s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Contador0-9/binary_counter4_pulse.vhd|
 !i113 1
 R11
 R12
