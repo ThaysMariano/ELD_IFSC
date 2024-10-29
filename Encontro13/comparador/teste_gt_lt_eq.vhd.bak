@@ -1,0 +1,28 @@
+-- comparar A e B
+
+entity teste_gt_lt_eq is
+	port (
+		a : in integer;
+		b : in integer;
+		gt: out bit;
+		lt: out bit;
+		eq: out bit
+		);
+end entity;
+
+
+architecture ifsc_v1 of teste_gt_lt_eq is
+begin
+
+process(a,b)
+begin
+	if (a>b) then
+		gt <='1'
+	elsif (a=b) then
+		eq <= '1'
+	else 
+		lt <= '1'
+	end if 
+end process;
+
+end architecture;

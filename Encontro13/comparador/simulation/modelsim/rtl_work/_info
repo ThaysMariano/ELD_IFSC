@@ -1,0 +1,89 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/ELD_IFSC/Encontro13/comparador/simulation/modelsim
+Cifsc_cfg
+eteste_gt_lt_eq
+aifsc_v2
+DAx4 work 14 teste_gt_lt_eq 7 ifsc_v2 22 kFhfzg@K9M`3mFJhX?bVD2
+Z1 DEx4 work 14 teste_gt_lt_eq 0 22 NNGc4jBIO6@YYdoAI4Jhk3
+!i122 0
+Z2 w1730225681
+R0
+Z3 8/home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd
+Z4 F/home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd
+l0
+L43 1
+Vo5_n<EXCdfTfLe7Zo2dQK3
+!s100 kfYMFj4FBAThOB[kg>keM0
+Z5 OV;C;2020.1;71
+31
+Z6 !s110 1730225683
+!i10b 0
+Z7 !s108 1730225683.000000
+Z8 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd|
+!s107 /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd|
+!i113 1
+Z9 o-93 -work work
+Z10 tExplicit 1 CvgOpt 0
+Eteste_gt_lt_eq
+R2
+!i122 0
+R0
+R3
+R4
+l0
+L2 1
+VNNGc4jBIO6@YYdoAI4Jhk3
+!s100 VDCBlAIKP3IPc7[hCe0in0
+R5
+31
+R6
+!i10b 1
+R7
+R8
+Z11 !s107 /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd|
+!i113 1
+R9
+R10
+Aifsc_v2
+R1
+!i122 0
+l35
+L34 8
+VkFhfzg@K9M`3mFJhX?bVD2
+!s100 eiW3`AcVeT2:ede89?60O2
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R11
+!i113 1
+R9
+R10
+Aifsc_v1
+R1
+!i122 0
+l14
+L13 19
+Vg`]BXTC]VC:m<1i7S7z[f3
+!s100 YQe0cXWUSQECCZi4QU;IQ3
+R5
+31
+R6
+!i10b 1
+R7
+R8
+R11
+!i113 1
+R9
+R10

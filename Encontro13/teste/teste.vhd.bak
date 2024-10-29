@@ -1,0 +1,15 @@
+entity teste is
+	port
+	(
+	a : out integer range 0 to 15
+	);
+end entity;
+
+architecture ifsc of teste is
+
+begin
+a<= 0;
+a<=15;
+
+end ifsc;
+

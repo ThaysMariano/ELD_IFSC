@@ -1,0 +1,25 @@
+# do teste_gt_lt_eq_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:14:43 on Oct 29,2024
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity teste_gt_lt_eq
+# -- Compiling architecture ifsc_v1 of teste_gt_lt_eq
+# -- Compiling architecture ifsc_v2 of teste_gt_lt_eq
+# -- Loading entity teste_gt_lt_eq
+# -- Compiling configuration ifsc_cfg
+# -- Loading entity teste_gt_lt_eq
+# -- Loading architecture ifsc_v2 of teste_gt_lt_eq
+# End time: 15:14:43 on Oct 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

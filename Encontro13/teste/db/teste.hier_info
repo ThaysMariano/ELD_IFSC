@@ -1,0 +1,8 @@
+|teste
+b => ~NO_FANOUT~
+a[0] <= <VCC>
+a[1] <= <VCC>
+a[2] <= <VCC>
+a[3] <= <VCC>
+
+
