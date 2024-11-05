@@ -1,6 +1,6 @@
 Analysis & Synthesis report for teste_gt_lt_eq
-Sat Nov 02 19:25:59 2024
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Tue Nov  5 13:45:41 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
 ---------------------
@@ -40,24 +40,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov 02 19:25:59 2024       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                      ; teste_gt_lt_eq                              ;
-; Top-level Entity Name              ; teste_gt_lt_eq                              ;
-; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 9                                           ;
-;     Total combinational functions  ; 9                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 11                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Nov  5 13:45:41 2024           ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
+; Revision Name                      ; teste_gt_lt_eq                                  ;
+; Top-level Entity Name              ; teste_gt_lt_eq                                  ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 9                                               ;
+;     Total combinational functions  ; 9                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 11                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -151,8 +151,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 32          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,13 +162,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
-; teste_gt_lt_eq.vhd               ; yes             ; User VHDL File  ; C:/Users/thays/Desktop/repo/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
+; teste_gt_lt_eq.vhd               ; yes             ; User VHDL File  ; /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -259,18 +259,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Nov 02 19:25:46 2024
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+    Info: Processing started: Tue Nov  5 13:45:35 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off teste_gt_lt_eq -c teste_gt_lt_eq
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 6 design units, including 1 entities, in source file teste_gt_lt_eq.vhd
-    Info (12022): Found design unit 1: teste_gt_lt_eq-ifsc_v1 File: C:/Users/thays/Desktop/repo/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 15
-    Info (12022): Found design unit 2: teste_gt_lt_eq-ifsc_v2 File: C:/Users/thays/Desktop/repo/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 36
-    Info (12022): Found design unit 3: teste_gt_lt_eq-ifsc_v3 File: C:/Users/thays/Desktop/repo/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 45
-    Info (12022): Found design unit 4: teste_gt_lt_eq-ifsc_v4 File: C:/Users/thays/Desktop/repo/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 52
-    Info (12022): Found design unit 5: ifsc_cfg File: C:/Users/thays/Desktop/repo/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 59
-    Info (12023): Found entity 1: teste_gt_lt_eq File: C:/Users/thays/Desktop/repo/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 2
+    Info (12022): Found design unit 1: teste_gt_lt_eq-ifsc_v1 File: /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 15
+    Info (12022): Found design unit 2: teste_gt_lt_eq-ifsc_v2 File: /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 36
+    Info (12022): Found design unit 3: teste_gt_lt_eq-ifsc_v3 File: /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 45
+    Info (12022): Found design unit 4: teste_gt_lt_eq-ifsc_v4 File: /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 52
+    Info (12022): Found design unit 5: ifsc_cfg File: /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 59
+    Info (12023): Found entity 1: teste_gt_lt_eq File: /home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd Line: 2
 Info (12127): Elaborating entity "teste_gt_lt_eq" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -280,9 +280,9 @@ Info (21057): Implemented 20 device resources after synthesis - the final resour
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 9 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Sat Nov 02 19:25:59 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 428 megabytes
+    Info: Processing ended: Tue Nov  5 13:45:41 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:11
 
 
