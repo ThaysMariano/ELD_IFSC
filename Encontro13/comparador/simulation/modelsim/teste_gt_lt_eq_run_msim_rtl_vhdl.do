@@ -5,5 +5,5 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {/home/aluno/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd}
+vcom -93 -work work {C:/Users/thays/Desktop/repo/ELD_IFSC/Encontro13/comparador/teste_gt_lt_eq.vhd}
 

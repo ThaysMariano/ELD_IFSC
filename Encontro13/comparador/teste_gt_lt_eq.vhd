@@ -7,7 +7,8 @@ entity teste_gt_lt_eq is
 		lt: buffer bit;
 		eq: buffer bit
 		);
--- saida que pode ser lida
+		
+-- buffer saida que pode ser lida
 end entity;
 
 
@@ -41,9 +42,25 @@ begin
 	
 end architecture;
 
+architecture ifsc_v3 of teste_gt_lt_eq is
+begin
+    eq <= '1' when (a = b) else '0';
+    gt <= '1' when (a > b) else '0';    
+    lt <= '1' when (eq /= '1') and (gt /= '1') else '0';
+end architecture;
+
+architecture ifsc_v4 of teste_gt_lt_eq is
+begin
+	gt <= '1' when (a>b) else '0';
+	lt <= '1' when (a<b) else '0';
+	eq <= '1' when (gt/='1') and (lt/='1') else '0';
+end architecture;
+
 configuration ifsc_cfg of teste_gt_lt_eq is
-for ifsc_v1 end for;
--- for ifsc_v2 end for;
+-- for ifsc_v1 end for;
+ for ifsc_v2 end for;
+-- for ifsc_v3 end for;
+-- for ifsc_v4 end for;
 end configuration;
 
 

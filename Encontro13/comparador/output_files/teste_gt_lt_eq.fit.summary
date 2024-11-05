@@ -1,20 +1,16 @@
-Fitter Status : Successful - Tue Oct 29 15:18:25 2024
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+Fitter Status : Successful - Sat Nov 02 19:26:05 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : teste_gt_lt_eq
 Top-level Entity Name : teste_gt_lt_eq
-Family : Cyclone V
-Device : 5CGXFC4F6M11I7
+Family : Cyclone IV E
+Device : EP4CE10E22C7
 Timing Models : Final
-Logic utilization (in ALMs) : 5 / 18,860 ( < 1 % )
+Total logic elements : 9 / 10,320 ( < 1 % )
+    Total combinational functions : 9 / 10,320 ( < 1 % )
+    Dedicated logic registers : 0 / 10,320 ( 0 % )
 Total registers : 0
-Total pins : 11 / 149 ( 7 % )
+Total pins : 11 / 92 ( 12 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 2,560,000 ( 0 % )
-Total RAM Blocks : 0 / 250 ( 0 % )
-Total DSP Blocks : 0 / 70 ( 0 % )
-Total HSSI RX PCSs : 0 / 4 ( 0 % )
-Total HSSI PMA RX Deserializers : 0 / 4 ( 0 % )
-Total HSSI TX PCSs : 0 / 4 ( 0 % )
-Total HSSI PMA TX Serializers : 0 / 4 ( 0 % )
-Total PLLs : 0 / 10 ( 0 % )
-Total DLLs : 0 / 4 ( 0 % )
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
