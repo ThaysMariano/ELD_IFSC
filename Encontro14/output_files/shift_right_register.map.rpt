@@ -1,5 +1,5 @@
 Analysis & Synthesis report for shift_right_register
-Thu Oct 31 17:39:38 2024
+Tue Nov  5 14:21:16 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 31 17:39:38 2024           ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov  5 14:21:16 2024           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; shift_right_register                            ;
 ; Top-level Entity Name              ; shift_right_register                            ;
@@ -261,8 +261,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
-    Info: Processing started: Thu Oct 31 17:39:32 2024
+    Info: Processing started: Tue Nov  5 14:21:10 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off shift_right_register -c shift_right_register
+Info (16303): High Performance Effort optimization mode selected -- timing performance will be prioritized at the potential cost of increased compilation time
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file shift_right_register.vhd
@@ -270,15 +271,29 @@ Info (12021): Found 2 design units, including 1 entities, in source file shift_r
     Info (12023): Found entity 1: shift_right_register File: /home/aluno/ELD_IFSC/Encontro14/shift_right_register.vhd Line: 4
 Info (12127): Elaborating entity "shift_right_register" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
+Info (128000): Starting physical synthesis optimizations for speed
+Info (332104): Reading SDC File: 'SDC2.sdc'
+Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning (332169): From clk (Rise) to clk (Rise) (setup and hold)
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 1 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):    1.000          clk
+Info (128002): Starting physical synthesis algorithm register retiming
+Info (128003): Physical synthesis algorithm register retiming complete: estimated slack improvement of 0 ps
+Info (128002): Starting physical synthesis algorithm combinational resynthesis using boolean division
+Info (128003): Physical synthesis algorithm combinational resynthesis using boolean division complete: estimated slack improvement of 0 ps
+Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:00
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 10 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 4 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 483 megabytes
-    Info: Processing ended: Thu Oct 31 17:39:38 2024
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 509 megabytes
+    Info: Processing ended: Tue Nov  5 14:21:16 2024
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:11
 

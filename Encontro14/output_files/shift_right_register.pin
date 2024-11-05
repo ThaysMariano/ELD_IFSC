@@ -69,16 +69,16 @@ CHIP  "shift_right_register"  ASSIGNED TO AN: EP4CE6E22A7
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-q[3]                         : 1         : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 1         :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 2         :        :                   :         : 1         :                
-q[1]                         : 3         : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 3         :        :                   :         : 1         :                
 GND                          : 4         : gnd    :                   :         :           :                
 VCCINT                       : 5         : power  :                   : 1.2V    :           :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 6         : input  : 2.5 V             :         : 1         : N              
-q[2]                         : 7         : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 7         :        :                   :         : 1         :                
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 8         : input  : 2.5 V             :         : 1         : N              
 nSTATUS                      : 9         :        :                   :         : 1         :                
-q[0]                         : 10        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 10        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 11        :        :                   :         : 1         :                
 ~ALTERA_DCLK~                : 12        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 13        : input  : 2.5 V             :         : 1         : N              
@@ -99,10 +99,10 @@ GND                          : 27        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : 28        :        :                   :         : 2         :                
 VCCINT                       : 29        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 30        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 31        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 32        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 33        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 34        :        :                   :         : 2         :                
+q[0]                         : 31        : output : 2.5 V             :         : 2         : N              
+q[1]                         : 32        : output : 2.5 V             :         : 2         : N              
+q[3]                         : 33        : output : 2.5 V             :         : 2         : N              
+q[2]                         : 34        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : 35        : power  :                   : 2.5V    :           :                
 GNDA1                        : 36        : gnd    :                   :         :           :                
 VCCD_PLL1                    : 37        : power  :                   : 1.2V    :           :                

@@ -1,4 +1,4 @@
-
+-- Contador J
  library ieee;
  use ieee.std_logic_1164.all;
  entity shift_right_register is
