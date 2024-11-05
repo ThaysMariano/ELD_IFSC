@@ -1,0 +1,13 @@
+|shift_reg
+clock => q[0].CLK
+clock => q[1].CLK
+clock => q[2].CLK
+clock => q[3].CLK
+reset => q[0].ACLR
+reset => q[1].ACLR
+reset => q[2].ACLR
+reset => q[3].ACLR
+d_in => q[3].DATAIN
+q_out <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,8 @@
+|oun
+a[0] => b[2].IN0
+a[1] => b[2].IN1
+a[2] => b[3].IN1
+a[3] => b.IN1
+ou <= b.DB_MAX_OUTPUT_PORT_TYPE
+
+
