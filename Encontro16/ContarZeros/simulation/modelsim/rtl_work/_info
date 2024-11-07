@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/ELD_IFSC/Encontro16/simulation/modelsim
+Cconfig
+eleading_zeros
+aifsc_v1
+DAx4 work 13 leading_zeros 7 ifsc_v1 22 3Gk2_aJ2>^fJRXULMPC?90
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z3 DEx4 work 13 leading_zeros 0 22 fkB:Qi8RUgj_Tf@MMlaE33
+!i122 6
+Z4 w1731009961
+R0
+Z5 8/home/aluno/ELD_IFSC/Encontro16/leading_zeros.vhd
+Z6 F/home/aluno/ELD_IFSC/Encontro16/leading_zeros.vhd
+l0
+L51 1
+V8VBG3Ck>nZaGd@V62]kSc1
+!s100 KjYKd`Uk`dZR5eeWCV^gI0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1731010783
+!i10b 0
+Z9 !s108 1731010783.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELD_IFSC/Encontro16/leading_zeros.vhd|
+Z11 !s107 /home/aluno/ELD_IFSC/Encontro16/leading_zeros.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Eleading_zeros
+R4
+R1
+R2
+!i122 6
+R0
+R5
+R6
+l0
+L5 1
+VfkB:Qi8RUgj_Tf@MMlaE33
+!s100 F45@1i`BP]5PcGb0HFfF50
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Aifsc_v2
+R1
+R2
+R3
+!i122 6
+l32
+Z14 L30 18
+Z15 VQ7>YJdIQ12YC:PL=[M1Yo2
+Z16 !s100 ]>GC^F^gnQT_hZC[[oIe93
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Aifsc_v1
+R1
+R2
+R3
+!i122 6
+l15
+Z17 L13 16
+Z18 V3Gk2_aJ2>^fJRXULMPC?90
+Z19 !s100 _ZBWgZf4dJbCCQdkSEali1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
