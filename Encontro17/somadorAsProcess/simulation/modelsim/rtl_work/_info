@@ -1,0 +1,70 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/ELD_IFSC/Encontro17/somadorAsProcess/simulation/modelsim
+Pmoecke
+!i122 5
+w1731432415
+R0
+8/home/aluno/ELD_IFSC/Encontro17/somadorAsProcess/moecke.vhd
+F/home/aluno/ELD_IFSC/Encontro17/somadorAsProcess/moecke.vhd
+l0
+L3 1
+VKLa[m15YCRJJGC^k`6nFT3
+!s100 joeb6[?ZZMM3XDHf=nlGN1
+Z1 OV;C;2020.1;71
+31
+!s110 1731434318
+!i10b 1
+!s108 1731434318.000000
+!s90 -reportprogress|300|-93|-work|work|/home/aluno/ELD_IFSC/Encontro17/somadorAsProcess/moecke.vhd|
+!s107 /home/aluno/ELD_IFSC/Encontro17/somadorAsProcess/moecke.vhd|
+!i113 1
+Z2 o-93 -work work
+Z3 tExplicit 1 CvgOpt 0
+Esomador_deas_gen_process
+Z4 w1731433567
+Z5 DPx4 work 6 moecke 0 22 KLa[m15YCRJJGC^k`6nFT3
+!i122 1
+R0
+Z6 8/home/aluno/ELD_IFSC/Encontro17/somadorAsProcess/somador_deas_gen_process.vhd
+Z7 F/home/aluno/ELD_IFSC/Encontro17/somadorAsProcess/somador_deas_gen_process.vhd
+l0
+L4 1
+VJ=X@kkY4Wc0^kbQLUMBc?2
+!s100 Y[:]S=R8@`B9RWlYP@6Za3
+R1
+31
+Z8 !s110 1731434036
+!i10b 1
+Z9 !s108 1731434036.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELD_IFSC/Encontro17/somadorAsProcess/somador_deas_gen_process.vhd|
+Z11 !s107 /home/aluno/ELD_IFSC/Encontro17/somadorAsProcess/somador_deas_gen_process.vhd|
+!i113 1
+R2
+R3
+Aifsc_v1
+R5
+DEx4 work 24 somador_deas_gen_process 0 22 J=X@kkY4Wc0^kbQLUMBc?2
+!i122 1
+l12
+L11 13
+Vim98F?2AS6IEcPES6j5TX3
+!s100 hfQj^QZL7e5Qcf_lEh?EP1
+R1
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R2
+R3

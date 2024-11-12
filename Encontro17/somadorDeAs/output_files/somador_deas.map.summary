@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 12 14:36:16 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+Revision Name : somador_deas
+Top-level Entity Name : somador_deas_generico
+Family : Cyclone IV E
+Total logic elements : 95
+    Total combinational functions : 95
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 105
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
