@@ -41,8 +41,6 @@ CONFIGURATION <configuration_name> OF <entity_name> IS
    FOR <architecture_name> END FOR;
 END CONFIGURATION;
 ```
- - - - 
- - - -
 - ### Processos
 ```
 [rótulo:] PROCESS [(lista_de_sensibilidade)] [IS]
@@ -55,11 +53,21 @@ END CONFIGURATION;
 
 ```
 
+### Modelo Registrador
+```
+process(clk,reset)
+ begin
+   if (reset='1') then
+      r_reg <= (others=>'0');
+   elsif (clk'event and clk='1') then
+      r_reg <= r_next;
+   end if;
+ end process;
+```
 
 
 
-## Encontro 4
-### Conhecer instruções 
+### Instruções 
 - WHEN_ELSE
 - WITH_SELECT
 
@@ -84,8 +92,6 @@ begin
 end architecture;
 ```
 
-
-## Encontro 8
 ### Flip-Flop e Circuitos Sequenciais
 
 ```
@@ -135,7 +141,6 @@ end process;
          END IF [rótulo];
 ```
 
-## Encontro 9
 ### Latch D
 
 ```
@@ -150,16 +155,80 @@ begin
 end process;
 ```
 
-### Modelo Registrador
+### For Generate 
+
 ```
-process(clk,reset)
- begin
-   if (reset='1') then
-      r_reg <= (others=>'0');
-   elsif (clk'event and clk='1') then
-      r_reg <= r_next;
-   end if;
- end process;
+-- Instrução concorrente FOR GENERATE.
+-- Note que neste caso o '''label''' é obrigatório
+
+label: FOR identificador IN faixa GENERATE
+   [Parte_Declarativa
+BEGIN]
+   Instruções_concorrentes
+   ...
+END GENERATE [label];
+
+--> Estruturas Concorrentes: When_Else, With_Select, For_Generate
+--> Estruturas Sequenciais: If_Then, Wait, Case, Loop
 ```
 
+### Loop
+````
+[rótulo:] LOOP
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+          END LOOP [rótulo];
+
+[rótulo:] FOR identificador IN faixa LOOP
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+          END LOOP [rótulo];
+
+[rótulo:] WHILE condição LOOP            -- Executa as "afirmações enquanto a "condição" for verdadeira
+             afirmação_sequencial;
+             afirmação_sequencial;
+             ...
+          END LOOP [rótulo];
+
+[rótulo:] [FOR identificador IN faixa] LOOP
+             afirmação_sequencial;
+             EXIT [rótulo] [WHEN condição];    -- Se a "condição" é verdadeira, termina o "LOOP"
+             afirmação_sequencial;
+             ...
+          END LOOP [rótulo];
+
+[rótulo:] [FOR identificador IN faixa] LOOP
+             afirmação_sequencial;
+             NEXT [rótulo] [WHEN condição];    -- Se a "condição" é verdadeira, não executa as linhas até a linha "END LOOP"
+                                               -- e incrementa o "identificador".
+             afirmação_sequencial;
+             ...
+          END LOOP [rótulo];          
+````
+
+### Case  
+
+``` 
+[rótulo opcional:] CASE expressão IS
+                  WHEN valor =>                             -- valor único
+                    afirmação_sequencial;                            
+                    afirmação_sequencial;                            
+                    ...
+                  WHEN valor1 | valor2 | ... | valorN  =>   -- lista de valores
+                    afirmação_sequencial;                            
+                    afirmação_sequencial;                            
+                    ...
+                  WHEN valor1 TO valor2 =>                  -- faixa de valores
+                    afirmação_sequencial;                            
+                    afirmação_sequencial; 
+                    ...
+                  WHEN OTHERS  =>                          -- para evitar latches
+                    afirmação_sequencial;                            
+                    afirmação_sequencial; 
+                    ...
+          END CASE;
+
+```
 
