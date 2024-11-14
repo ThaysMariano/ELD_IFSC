@@ -1,0 +1,27 @@
+|contador
+clk => r_regDZ[0].CLK
+clk => r_regDZ[1].CLK
+clk => r_regDZ[2].CLK
+clk => r_regDZ[3].CLK
+clk => r_regUN[0].CLK
+clk => r_regUN[1].CLK
+clk => r_regUN[2].CLK
+clk => r_regUN[3].CLK
+reset => r_regDZ[0].ACLR
+reset => r_regDZ[1].ACLR
+reset => r_regDZ[2].ACLR
+reset => r_regDZ[3].ACLR
+reset => r_regUN[0].ACLR
+reset => r_regUN[1].ACLR
+reset => r_regUN[2].ACLR
+reset => r_regUN[3].ACLR
+numero[0] <= r_regUN[0].DB_MAX_OUTPUT_PORT_TYPE
+numero[1] <= r_regUN[1].DB_MAX_OUTPUT_PORT_TYPE
+numero[2] <= r_regUN[2].DB_MAX_OUTPUT_PORT_TYPE
+numero[3] <= r_regUN[3].DB_MAX_OUTPUT_PORT_TYPE
+numero[4] <= r_regDZ[0].DB_MAX_OUTPUT_PORT_TYPE
+numero[5] <= r_regDZ[1].DB_MAX_OUTPUT_PORT_TYPE
+numero[6] <= r_regDZ[2].DB_MAX_OUTPUT_PORT_TYPE
+numero[7] <= r_regDZ[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

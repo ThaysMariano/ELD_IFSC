@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "numero[0]",
+					"strict" : false
+				},
+				{
+					"name" : "numero[1]",
+					"strict" : false
+				},
+				{
+					"name" : "numero[2]",
+					"strict" : false
+				},
+				{
+					"name" : "numero[3]",
+					"strict" : false
+				},
+				{
+					"name" : "numero[4]",
+					"strict" : false
+				},
+				{
+					"name" : "numero[5]",
+					"strict" : false
+				},
+				{
+					"name" : "numero[6]",
+					"strict" : false
+				},
+				{
+					"name" : "numero[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
