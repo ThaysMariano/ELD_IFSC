@@ -5,7 +5,8 @@ entity contador is
 	generic (N : natural := 8);
 	port(
         clk,reset: in std_logic;
-        dezena, unidade: buffer integer 0 to 9
+        dezena, unidade: buffer integer 0 to 9;
+		  numero : out integer 0 to 99
         );
 end entity;
 
@@ -26,7 +27,10 @@ process(clk, reset)
 				dezena <= 0;
         elsif (clk'event and clk='1') then
             unidade <= count1 + 1
+				wait until unidade = 9;
+					dezena = count2 +1;
         end if;
     end process;
+	 numero <= dezena + unidade;
 
 end architecture;
