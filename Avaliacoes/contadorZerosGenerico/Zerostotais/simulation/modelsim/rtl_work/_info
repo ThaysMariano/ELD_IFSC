@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/contadorZerosGenerico/Zerostotais/simulation/modelsim
 Eleading_zeros_generate
-Z1 w1731442648
+Z1 w1731518024
 Z2 DPx4 work 6 moecke 0 22 KLa[m15YCRJJGC^k`6nFT3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
@@ -24,36 +24,36 @@ V6be]kAh9UaS[LTf`X2E`J0
 !s100 57H3njo]nE_d25R0;]1Yl2
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1731442673
+Z8 !s110 1731518046
 !i10b 1
-Z9 !s108 1731442673.000000
+Z9 !s108 1731518046.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/contadorZerosGenerico/Zerostotais/leading_zeros_generate.vhd|
-Z11 !s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/contadorZerosGenerico/Zerostotais/leading_zeros_generate.vhd|
+!s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/contadorZerosGenerico/Zerostotais/leading_zeros_generate.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
-Aifsc_v2
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aifsc_v1
 R2
 R3
 R4
 DEx4 work 22 leading_zeros_generate 0 22 6be]kAh9UaS[LTf`X2E`J0
 !i122 1
-l35
-L33 13
-V4KmbN@7W=@e@mJCJg@?dN3
-!s100 gg_lPRlfK0Y9W0zc]MH_B3
+l36
+L33 22
+VTD4G0nQkXM`Z9dddUkR310
+!s100 ma9A`d_0ZdYFC4m;H5EEZ2
 R7
 31
 R8
 !i10b 1
 R9
 R10
-R11
+Z13 !s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/contadorZerosGenerico/Zerostotais/leading_zeros_generate.vhd|
 !i113 1
+R11
 R12
-R13
 Pmoecke
-!i122 5
+!i122 0
 w1731436604
 R0
 8C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/contadorZerosGenerico/Zerostotais/moecke.vhd
@@ -64,11 +64,11 @@ VKLa[m15YCRJJGC^k`6nFT3
 !s100 joeb6[?ZZMM3XDHf=nlGN1
 R7
 31
-!s110 1731442750
+R8
 !i10b 1
-!s108 1731442750.000000
+R9
 !s90 -reportprogress|300|-93|-work|work|C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/contadorZerosGenerico/Zerostotais/moecke.vhd|
 !s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/contadorZerosGenerico/Zerostotais/moecke.vhd|
 !i113 1
+R11
 R12
-R13
