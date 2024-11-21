@@ -33,16 +33,14 @@ begin
 	-- se CC_ACn = 1 anodo comum, = 0 catodo comum
 				
 	L1: if CC_ACn=0 generate
-		ssd <= ssd_int;
+			ssd <= ssd_int;
 		else 
-		ssd <= not(ssd_int);
+			ssd <= not(ssd_int);
 	end generate;
 	
 	-- se z_out = 1 exibir zeros, = 0 ocultar
 	
-	
-	
-
+		
 	
 end architecture;	
 			
