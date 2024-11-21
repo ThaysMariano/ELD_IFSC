@@ -10,29 +10,25 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/thays/Desktop/relogio24h/relogio_24h_dois.vhd}
+# vcom -93 -work work {C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio24h/relogio_24h_dois.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:33:42 on Nov 20,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/relogio24h/relogio_24h_dois.vhd 
+# Start time: 11:08:25 on Nov 21,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio24h/relogio_24h_dois.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
 # -- Loading package NUMERIC_STD
 # -- Compiling entity relogio_24h_dois
 # -- Compiling architecture contador of relogio_24h_dois
-# End time: 21:33:42 on Nov 20,2024, Elapsed time: 0:00:00
+# End time: 11:08:25 on Nov 21,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.relogio_24h_dois(contador)
 # vsim work.relogio_24h_dois(contador) 
-# Start time: 21:35:07 on Nov 20,2024
+# Start time: 11:08:35 on Nov 21,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
 # Loading ieee.numeric_std(body)
 # Loading work.relogio_24h_dois(contador)
 add wave -position end  sim:/relogio_24h_dois/clk
@@ -40,23 +36,105 @@ add wave -position end  sim:/relogio_24h_dois/reset
 add wave -position end  sim:/relogio_24h_dois/hora
 add wave -position end  sim:/relogio_24h_dois/minuto
 add wave -position end  sim:/relogio_24h_dois/segundo
-add wave -position end  sim:/relogio_24h_dois/segundos_reg
-add wave -position end  sim:/relogio_24h_dois/minutos_reg
-add wave -position end  sim:/relogio_24h_dois/horas_reg
-add wave -position end  sim:/relogio_24h_dois/segundos_next
-add wave -position end  sim:/relogio_24h_dois/minutos_next
-add wave -position end  sim:/relogio_24h_dois/horas_next
 force -freeze sim:/relogio_24h_dois/clk 1 0, 0 {50 ps} -r 100
 force -freeze sim:/relogio_24h_dois/reset 1 0
 run
 force -freeze sim:/relogio_24h_dois/reset 0 0
 run
 run
-run 80000
-run 80000
-run 80000
-run 80000
-run 80000
-run 800000
-# End time: 21:37:28 on Nov 20,2024, Elapsed time: 0:02:21
+run
+run 300000
+run 300000
+do tb_relogio.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:12:38 on Nov 21,2024
+# vcom -reportprogress 300 -93 -work work ../../relogio_24h_dois.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity relogio_24h_dois
+# -- Compiling architecture contador of relogio_24h_dois
+# End time: 11:12:38 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:12:39 on Nov 21,2024, Elapsed time: 0:04:04
+# Errors: 0, Warnings: 0
+# vsim work.relogio_24h_dois(contador) 
+# Start time: 11:12:39 on Nov 21,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.relogio_24h_dois(contador)
+# ** UI-Msg: (vish-4014) No objects found matching 'radix'.
+# ** UI-Msg: (vish-4014) No objects found matching 'unsigned'.
+# Error in macro ./tb_relogio.do line 13
+# ** UI-Msg: (vish-4014) No objects found matching 'radix'.
+# ** UI-Msg: (vish-4014) No objects found matching 'unsigned'.
+#     while executing
+# "add wave -position end  radix unsigned sim:/relogio_24h_dois/hora"
+do tb_relogio.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:13:00 on Nov 21,2024
+# vcom -reportprogress 300 -93 -work work ../../relogio_24h_dois.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity relogio_24h_dois
+# -- Compiling architecture contador of relogio_24h_dois
+# End time: 11:13:01 on Nov 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 11:13:02 on Nov 21,2024, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 0
+# vsim work.relogio_24h_dois(contador) 
+# Start time: 11:13:02 on Nov 21,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.relogio_24h_dois(contador)
+do tb_relogio.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:17:18 on Nov 21,2024
+# vcom -reportprogress 300 -93 -work work ../../relogio_24h_dois.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity relogio_24h_dois
+# -- Compiling architecture contador of relogio_24h_dois
+# End time: 11:17:18 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:17:20 on Nov 21,2024, Elapsed time: 0:04:18
+# Errors: 0, Warnings: 0
+# vsim work.relogio_24h_dois(contador) 
+# Start time: 11:17:20 on Nov 21,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.relogio_24h_dois(contador)
+# End time: 11:17:29 on Nov 21,2024, Elapsed time: 0:00:09
 # Errors: 0, Warnings: 0

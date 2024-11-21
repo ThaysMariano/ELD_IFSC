@@ -5,5 +5,5 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio24h/relogio_24h_dois.vhd}
+vcom -93 -work work {C:/Users/thays/Desktop/relogio24h/relogio_24h_dois.vhd}
 

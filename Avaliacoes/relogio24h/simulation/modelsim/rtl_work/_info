@@ -8,51 +8,47 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/thays/Desktop/relogio24h/simulation/modelsim
+Z0 dC:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio24h/simulation/modelsim
 Erelogio_24h_dois
-Z1 w1732148977
+Z1 w1732198079
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 0
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
 R0
-Z7 8C:/Users/thays/Desktop/relogio24h/relogio_24h_dois.vhd
-Z8 FC:/Users/thays/Desktop/relogio24h/relogio_24h_dois.vhd
+Z5 8../../relogio_24h_dois.vhd
+Z6 F../../relogio_24h_dois.vhd
 l0
-L7 1
-VbmmzPP8R<=h<Ce0QFhPaQ0
-!s100 k3hhfABb6Q7S5n4<EBfKk2
-Z9 OV;C;2020.1;71
+L5 1
+VjkXc;GnD0TXY2SlUXX=i:1
+!s100 czTdQlSjR5:38=LGcQ3S]0
+Z7 OV;C;2020.1;71
 31
-Z10 !s110 1732149222
+Z8 !s110 1732198638
 !i10b 1
-Z11 !s108 1732149222.000000
-Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/thays/Desktop/relogio24h/relogio_24h_dois.vhd|
-!s107 C:/Users/thays/Desktop/relogio24h/relogio_24h_dois.vhd|
+Z9 !s108 1732198638.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../relogio_24h_dois.vhd|
+Z11 !s107 ../../relogio_24h_dois.vhd|
 !i113 1
-Z13 o-93 -work work
-Z14 tExplicit 1 CvgOpt 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
 Acontador
 R2
 R3
 R4
-R5
-R6
-DEx4 work 16 relogio_24h_dois 0 22 bmmzPP8R<=h<Ce0QFhPaQ0
-!i122 0
-l28
-L16 57
-V?^MHb_`5;2zEm0:fz<`Ok1
-!s100 d>O^mSj_EkdA_YGCEUaBd1
-R9
+Z14 DEx4 work 16 relogio_24h_dois 0 22 jkXc;GnD0TXY2SlUXX=i:1
+!i122 3
+l24
+Z15 L14 56
+Z16 VE@7m:Eb>ZZcUVd74I`VgW3
+Z17 !s100 A08UAOT1SKJ@QC?h^1n4V1
+R7
 31
-R10
+R8
 !i10b 1
+R9
+R10
 R11
-R12
-Z15 !s107 C:/Users/thays/Desktop/relogio24h/relogio_24h_dois.vhd|
 !i113 1
+R12
 R13
-R14
