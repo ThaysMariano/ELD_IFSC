@@ -1,0 +1,18 @@
+|contador_up_down
+clk => \L2:cnt[0].CLK
+clk => \L2:cnt[1].CLK
+clk => \L2:cnt[2].CLK
+clk => \L2:cnt[3].CLK
+clk => \L2:cnt[4].CLK
+rst => \L2:cnt[0].PRESET
+rst => \L2:cnt[1].ACLR
+rst => \L2:cnt[2].PRESET
+rst => \L2:cnt[3].ACLR
+rst => \L2:cnt[4].PRESET
+count_out[0] <= \L2:cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+count_out[1] <= \L2:cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+count_out[2] <= \L2:cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+count_out[3] <= \L2:cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+count_out[4] <= \L2:cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "count_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "count_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "count_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "count_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "count_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[30]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[24]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[25]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[26]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[27]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[28]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[29]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[18]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[19]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[20]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[21]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[22]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[23]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[12]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[13]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[14]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[15]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[16]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[17]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[6]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[8]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[9]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[10]",
+					"strict" : false
+				},
+				{
+					"name" : "UPDOWN[11]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
