@@ -232,3 +232,7 @@ END GENERATE [label];
 
 ```
 
+
+### Anotações
+- Variáveis só podem ser utilizadas dentro de process
+
