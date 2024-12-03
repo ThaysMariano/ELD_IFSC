@@ -1,4 +1,4 @@
-# do gray_counter4_run_msim_rtl_vhdl.do
+# do lfsr4_910_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,7 +10,7 @@
 # 
 # vcom -93 -work work {/home/aluno/ELD_IFSC/Encontro22/lfsr4_910.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:26:56 on Nov 28,2024
+# Start time: 13:55:27 on Dec 03,2024
 # vcom -reportprogress 300 -93 -work work /home/aluno/ELD_IFSC/Encontro22/lfsr4_910.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -18,14 +18,14 @@
 # -- Compiling entity lfsr4_910
 # -- Compiling architecture no_zero_arch of lfsr4_910
 # ** Warning: /home/aluno/ELD_IFSC/Encontro22/lfsr4_910.vhd(19): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-# End time: 17:26:56 on Nov 28,2024, Elapsed time: 0:00:00
+# End time: 13:55:28 on Dec 03,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # 
 # 
 # stdin: <EOF>
 vsim work.lfsr4_910(no_zero_arch)
 # vsim work.lfsr4_910(no_zero_arch) 
-# Start time: 17:26:59 on Nov 28,2024
+# Start time: 13:55:32 on Dec 03,2024
 # //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 6.1.0-28-amd64
 # //
 # //  Copyright 1991-2020 Mentor Graphics Corporation
@@ -43,6 +43,7 @@ vsim work.lfsr4_910(no_zero_arch)
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.lfsr4_910(no_zero_arch)
+add wave -position end  sim:/lfsr4_910/N
 add wave -position end  sim:/lfsr4_910/clk
 add wave -position end  sim:/lfsr4_910/reset
 add wave -position end  sim:/lfsr4_910/q
@@ -50,20 +51,17 @@ add wave -position end  sim:/lfsr4_910/r_reg
 add wave -position end  sim:/lfsr4_910/r_next
 add wave -position end  sim:/lfsr4_910/fb
 add wave -position end  sim:/lfsr4_910/SEED
-force -freeze sim:/lfsr4_910/clk 1 0, 0 {50 ps} -r 100
 force -freeze sim:/lfsr4_910/reset 1 0
+rujn
+# invalid command name "rujn"
 run
 force -freeze sim:/lfsr4_910/reset 0 0
+force -freeze sim:/lfsr4_910/clk 1 0, 0 {50 ps} -r 100
 run
-run 400
-run 400
-run 400
-run 500
-run 400
-run 600
-run 500
-run 5000
-run  10000
-run 30000
-# End time: 17:39:19 on Nov 28,2024, Elapsed time: 0:12:20
+run
+run
+run 9000
+run 9000
+run 9000
+# End time: 13:56:45 on Dec 03,2024, Elapsed time: 0:01:13
 # Errors: 0, Warnings: 0

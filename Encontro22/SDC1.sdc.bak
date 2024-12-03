@@ -1,0 +1,1 @@
+create_clock -name clk -period 1100GHz [get_ports -noca_case {clk*}]
