@@ -1,0 +1,55 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity counter0tox is
+	generic(
+		D : natural := 5; -- Limite superior da dezena
+		U : natural := 5  -- Limite superior da unidade
+	);
+	port(
+		-- Entradas
+		clk, reset: in std_logic;
+		-- Saídas
+		unidade: out std_logic_vector(3 downto 0);
+		dezena: out std_logic_vector(3 downto 0)
+	);
+end entity;
+
+architecture counter0tox_arch of counter0tox is
+	-- Sinais internos para as contagens
+	signal reg_unidade: unsigned(3 downto 0) := (others => '0');
+	signal reg_dezena: unsigned(3 downto 0) := (others => '0');
+	signal next_unidade: unsigned(3 downto 0);
+	signal next_dezena: unsigned(3 downto 0);
+begin
+	-- Processo síncrono para atualizar os registradores
+	process(clk, reset)
+	begin
+		if reset = '1' then
+			-- Resetar os contadores
+			reg_unidade <= (others => '0');
+			reg_dezena <= (others => '0');
+		elsif rising_edge(clk) then
+			-- Atualizar os valores com os próximos estados
+			reg_unidade <= next_unidade;
+			reg_dezena <= next_dezena;
+		end if;
+	end process;
+
+	-- Lógica para calcular o próximo valor da unidade
+	next_unidade <= 
+		(reg_unidade + 1) when (reg_unidade < 9 and (reg_dezena /= D or reg_unidade /= U)) else -- Incrementa até U
+		(others => '0'); -- Reseta para 0 quando atinge D atinge D e U atinge U
+
+	-- Lógica para calcular o próximo valor da dezena
+	next_dezena <= 
+		(reg_dezena + 1) when (reg_unidade = 9 and reg_dezena < D) else -- Incrementa quando unidade atinge U
+		(others => '0') when (reg_unidade = U and reg_dezena = D) else -- Reseta quando atinge limite
+		reg_dezena; -- Mantém o valor atual caso contrário
+
+	-- Converter os valores para o tipo `std_logic_vector` nas saídas
+	unidade <= std_logic_vector(reg_unidade);
+	dezena <= std_logic_vector(reg_dezena);
+
+end architecture;

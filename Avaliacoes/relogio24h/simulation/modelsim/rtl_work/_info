@@ -14,41 +14,41 @@ Z1 w1732198079
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 3
+!i122 0
 R0
-Z5 8../../relogio_24h_dois.vhd
-Z6 F../../relogio_24h_dois.vhd
+Z5 8C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio24h/relogio_24h_dois.vhd
+Z6 FC:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio24h/relogio_24h_dois.vhd
 l0
 L5 1
 VjkXc;GnD0TXY2SlUXX=i:1
 !s100 czTdQlSjR5:38=LGcQ3S]0
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1732198638
+Z8 !s110 1732827153
 !i10b 1
-Z9 !s108 1732198638.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|../../relogio_24h_dois.vhd|
-Z11 !s107 ../../relogio_24h_dois.vhd|
+Z9 !s108 1732827152.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio24h/relogio_24h_dois.vhd|
+!s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio24h/relogio_24h_dois.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
 Acontador
 R2
 R3
 R4
-Z14 DEx4 work 16 relogio_24h_dois 0 22 jkXc;GnD0TXY2SlUXX=i:1
-!i122 3
+DEx4 work 16 relogio_24h_dois 0 22 jkXc;GnD0TXY2SlUXX=i:1
+!i122 0
 l24
-Z15 L14 56
-Z16 VE@7m:Eb>ZZcUVd74I`VgW3
-Z17 !s100 A08UAOT1SKJ@QC?h^1n4V1
+L14 56
+VE@7m:Eb>ZZcUVd74I`VgW3
+!s100 A08UAOT1SKJ@QC?h^1n4V1
 R7
 31
 R8
 !i10b 1
 R9
 R10
-R11
+Z13 !s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio24h/relogio_24h_dois.vhd|
 !i113 1
+R11
 R12
-R13
