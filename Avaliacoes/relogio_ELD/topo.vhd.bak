@@ -1,0 +1,87 @@
+--library ieee;
+--use ieee.std_logic_1164.all;
+--
+--entity topo is
+--	port
+--	(
+--		-- Input ports
+--		clk_geral, rst_geral			: in std_logic;
+--		Entrada_BCD_Unidade_Segundos: in std_logic_vector(3 downto 0);
+--		Entrada_BCD_Dezena_Segundos: in std_logic_vector(3 downto 0);
+--		Entrada_BCD_Unidade_Minutos: in std_logic_vector(3 downto 0);
+--		Entrada_BCD_Dezena_Minutos: in std_logic_vector(3 downto 0);
+--		Entrada_BCD_Unidade_Horas: in std_logic_vector(3 downto 0);
+--		Entrada_BCD_Dezena_Horas: in std_logic_vector(3 downto 0);
+--		Entradas_DP :	in std_logic_vector(5 downto 0);
+--		-- Output ports
+--		Saida_SSD_Unidade_Segundos: out std_logic_vector(6 downto 0);
+--		Saida_SSD_Dezena_Segundos: out std_logic_vector(6 downto 0);
+--		Saida_SSD_Unidade_Minutos: out std_logic_vector(6 downto 0);
+--		Saida_SSD_Dezena_Minutos: out	std_logic_vector(6 downto 0);
+--		Saida_SSD_Unidade_Horas: out std_logic_vector(6 downto 0);
+--		Saida_SSD_Dezena_Horas: out std_logic_vector(6 downto 0);
+--		Saidas_DP: out std_logic_vector(5 downto 0)
+--	);
+--end entity;
+--
+--
+---- Library Clause(s) (optional)
+---- Use Clause(s) (optional)
+--
+--architecture relogio of topo is
+--	component bcd2ssd
+--        generic
+--        (
+--            CC_ACn: natural := 1
+--        );
+--        port
+--        (
+--            -- Entradas do componente
+--            BCD  : in  std_logic_vector(3 downto 0);
+--            ZOP  : in  std_logic;
+--            DPin : in  std_logic;
+--            
+--            -- Saídas do componente
+--            SSD  : out std_logic_vector(6 downto 0);
+--            DPout: out std_logic
+--        );
+--    end component;
+--
+--	component counter0tox
+--		generic(
+--			D : natural := 2; -- Limite superior da dezena
+--			U : natural := 3  -- Limite superior da unidade
+--		);
+--		port(
+--			-- Entradas
+--			clk, reset: in std_logic;
+--			-- Saídas
+--			unidade: out std_logic_vector(3 downto 0);
+--			dezena: out std_logic_vector(3 downto 0)
+--		);
+--	end component;
+--
+--	component counter0to50m
+--		port(
+--			clk, reset: in std_logic;
+--			clk_out: out std_logic
+--	);
+--	end component;
+--	
+--begin
+--
+--	-- Process Statement (optional)
+--
+--	-- Concurrent Procedure Call (optional)
+--
+--	-- Concurrent Signal Assignment (optional)
+--
+--	-- Conditional Signal Assignment (optional)
+--
+--	-- Selected Signal Assignment (optional)
+--
+--	-- Component Instantiation Statement (optional)
+--
+--	-- Generate Statement (optional)
+--
+--end <arch_name>;
