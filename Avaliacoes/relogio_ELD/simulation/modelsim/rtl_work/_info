@@ -8,47 +8,176 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/simulation/modelsim
-Ecounter0tox
-Z1 w1733414365
+Z0 d/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/simulation/modelsim
+Ebcd2ssd
+Z1 w1733424268
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 1
 R0
-Z5 8../../counter0tox.vhd
-Z6 F../../counter0tox.vhd
+Z5 8/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd
+Z6 F/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd
 l0
 L7 1
-V=U]YlBzNkP9jURMC;9Ca11
-!s100 603C_:?`J61I=:4F_N8A23
+Vl9SoDf5lJk?dj;0Vh9FPL0
+!s100 5CEToG:VleOF9z<d7jO=W1
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1733414422
+Z8 !s110 1733431250
 !i10b 1
-Z9 !s108 1733414422.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|../../counter0tox.vhd|
-!s107 ../../counter0tox.vhd|
+Z9 !s108 1733431250.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd|
+Z11 !s107 /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd|
 !i113 1
-Z11 o-93 -work work
-Z12 tExplicit 1 CvgOpt 0
-Acounter0tox_arch
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aseven_segments
 R2
 R3
 R4
-Z13 DEx4 work 11 counter0tox 0 22 =U]YlBzNkP9jURMC;9Ca11
+DEx4 work 7 bcd2ssd 0 22 l9SoDf5lJk?dj;0Vh9FPL0
 !i122 1
-l26
-Z14 L20 37
-Z15 Vh`=cg@?izHCo><R>hZ2mK0
-Z16 !s100 aV>8FmV<<0n@dmFY?GPai2
+l23
+L21 32
+VAKe?mDK135TTNN?j6gS[:1
+!s100 Y5=Lin1@PV7za>`bIz6oh3
 R7
 31
 R8
 !i10b 1
 R9
 R10
-Z17 !s107 ../../counter0tox.vhd|
-!i113 1
 R11
+!i113 1
 R12
+R13
+Ecounter0to50m
+R1
+R2
+R3
+R4
+!i122 2
+R0
+Z14 8/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd
+Z15 F/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd
+l0
+L7 1
+VVIFoS8Wl10h>QSN_]<nZ63
+!s100 FoZ9E34k11]n7i6A1mmW43
+R7
+31
+R8
+!i10b 1
+R9
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd|
+Z17 !s107 /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd|
+!i113 1
+R12
+R13
+Acontador
+R2
+R3
+R4
+DEx4 work 13 counter0to50m 0 22 VIFoS8Wl10h>QSN_]<nZ63
+!i122 2
+l23
+L18 23
+VUUYiTc]0SaGXV>[6@EK:=3
+!s100 jF<7QSZ:D`mSZ17T7S11O3
+R7
+31
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 1
+R12
+R13
+Ecounter0tox
+Z18 w1733427647
+R2
+R3
+R4
+!i122 3
+R0
+Z19 8/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd
+Z20 F/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd
+l0
+L7 1
+VOK7X0NgWKQ:H0F7;X@DgI1
+!s100 =LTZ8kP:`]0MT^=WKL3U92
+R7
+31
+R8
+!i10b 1
+R9
+Z21 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd|
+!s107 /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd|
+!i113 1
+R12
+R13
+Acounter0tox_arch
+R2
+R3
+R4
+DEx4 work 11 counter0tox 0 22 OK7X0NgWKQ:H0F7;X@DgI1
+!i122 3
+l26
+L20 37
+Vh`=cg@?izHCo><R>hZ2mK0
+!s100 aV>8FmV<<0n@dmFY?GPai2
+R7
+31
+R8
+!i10b 1
+R9
+R21
+Z22 !s107 /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd|
+!i113 1
+R12
+R13
+Erelogio
+Z23 w1733431187
+R2
+R3
+R4
+!i122 0
+R0
+Z24 8/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd
+Z25 F/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd
+l0
+L7 1
+VXJCbS]fDTKc_O<FT;gb733
+!s100 :5ahDN;mY9W6kBBU5LjAm2
+R7
+31
+R8
+!i10b 1
+R9
+Z26 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd|
+Z27 !s107 /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd|
+!i113 1
+R12
+R13
+Atop_level
+R2
+R3
+R4
+DEx4 work 7 relogio 0 22 XJCbS]fDTKc_O<FT;gb733
+!i122 0
+l76
+L29 184
+VJ45IL6^4Q]Z_IYm[:R`E>0
+!s100 hUzdFnCM1W3dQgYC@4<>K3
+R7
+31
+R8
+!i10b 1
+R9
+R26
+R27
+!i113 1
+R12
+R13

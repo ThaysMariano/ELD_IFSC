@@ -7,8 +7,8 @@ use ieee.numeric_std.all;
 entity counter0tox is
 	generic(
 		-- Limites
-		D : natural := 2; 
-		U : natural := 3  
+		D : natural := 5; 
+		U : natural := 9  
 	);
 	port(
 		clk, reset: in std_logic;

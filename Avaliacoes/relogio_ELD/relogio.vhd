@@ -39,8 +39,8 @@ architecture top_level of relogio is
 			BCD	: in  std_logic_vector(3 downto 0);
 			ZOP	: in 	std_logic;
 			DPin	: in	std_logic;
-			SSD	: out std_logic_vector(6 downto 0);
-			DPout		: out std_logic
+			SSD	: out std_logic_vector(6 downto 0)
+--			DPout		: out std_logic
 		);
 	end component;
 
@@ -78,8 +78,8 @@ architecture top_level of relogio is
 	--clock
     U1: counter0to50m
         generic map (
-            LIMIT => 50000000 - 1, 
-            N_BITS => 26 
+            LIMIT => 10, 
+            N_BITS => 4 
         )
         port map (
             clk => clk_50MHz,
@@ -136,8 +136,8 @@ architecture top_level of relogio is
             BCD => bcd_uniss,
             ZOP => '0',
             DPin => '0',
-            SSD => SSD_UNISS,
-            DPout => open
+            SSD => SSD_UNISS
+--            DPout => open
         );
 
     -- D segundos
@@ -149,8 +149,8 @@ architecture top_level of relogio is
             BCD => bcd_dezss,
             ZOP => '0',
             DPin => '0',
-            SSD => SSD_DEZSS,
-            DPout => open
+            SSD => SSD_DEZSS
+--            DPout => open
         );
 
     -- U minutos
@@ -162,8 +162,8 @@ architecture top_level of relogio is
             BCD => bcd_unimm,
             ZOP => '0',
             DPin => '0',
-            SSD => SSD_UNIMM,
-            DPout => open
+            SSD => SSD_UNIMM
+--            DPout => open
         );
 
     -- D minutos
@@ -175,8 +175,8 @@ architecture top_level of relogio is
             BCD => bcd_dezmm,
             ZOP => '0',
             DPin => '0',
-            SSD => SSD_DEZMM,
-            DPout => open
+            SSD => SSD_DEZMM
+--            DPout => open
         );
 
     -- U horas
@@ -188,8 +188,8 @@ architecture top_level of relogio is
             BCD => bcd_unihh,
             ZOP => '0',
             DPin => '0',
-            SSD => SSD_UNIHH,
-            DPout => open
+            SSD => SSD_UNIHH
+--            DPout => open
         );
 
     -- D horas
@@ -201,11 +201,12 @@ architecture top_level of relogio is
             BCD => bcd_dezhh,
             ZOP => '0',
             DPin => '0',
-            SSD => SSD_DEZHH,
-            DPout => open
+            SSD => SSD_DEZHH
+--            DPout => open
         );
+		  
+		  
+		  -- Fazer Logica do Zop 
+		  -- Fazer uma logica para incrementar o clk
 
 end architecture;
-
-	
-	

@@ -1,4 +1,3 @@
-# Reading pref.tcl
 # do bcd2ssd_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,64 +6,111 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
-# Modifying modelsim.ini
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd}
+# vcom -93 -work work {/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:59:50 on Dec 05,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd 
+# Start time: 17:40:50 on Dec 05,2024
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity relogio
+# -- Compiling architecture top_level of relogio
+# End time: 17:40:50 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:40:50 on Dec 05,2024
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity bcd2ssd
+# -- Compiling architecture seven_segments of bcd2ssd
+# End time: 17:40:50 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:40:50 on Dec 05,2024
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter0to50m
+# -- Compiling architecture contador of counter0to50m
+# End time: 17:40:50 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:40:50 on Dec 05,2024
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity counter0tox
 # -- Compiling architecture counter0tox_arch of counter0tox
-# End time: 12:59:50 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 17:40:50 on Dec 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.counter0tox(counter0tox_arch)
-# vsim work.counter0tox(counter0tox_arch) 
-# Start time: 12:59:54 on Dec 05,2024
+# 
+# stdin: <EOF>
+vsim work.relogio(top_level)
+# vsim work.relogio(top_level) 
+# Start time: 17:40:53 on Dec 05,2024
+# //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 6.1.0-28-amd64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
+# Loading work.relogio(top_level)
+# Loading work.counter0to50m(contador)
 # Loading work.counter0tox(counter0tox_arch)
-add wave -position end  sim:/counter0tox/D
-add wave -position end  sim:/counter0tox/U
-add wave -position end  sim:/counter0tox/clk
-add wave -position end  sim:/counter0tox/reset
-add wave -position end  sim:/counter0tox/unidade
-add wave -position end  sim:/counter0tox/dezena
-add wave -position end  sim:/counter0tox/reg_unidade
-add wave -position end  sim:/counter0tox/reg_dezena
-add wave -position end  sim:/counter0tox/next_unidade
-add wave -position end  sim:/counter0tox/next_dezena
-do tb_counter0tox.do
-# ** Warning: (vlib-34) Library already exists at "rtl_work".
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:00:22 on Dec 05,2024
-# vcom -reportprogress 300 -93 -work work ../../counter0tox.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity counter0tox
-# -- Compiling architecture counter0tox_arch of counter0tox
-# End time: 13:00:22 on Dec 05,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 13:00:23 on Dec 05,2024, Elapsed time: 0:00:29
-# Errors: 0, Warnings: 0
-# vsim work.counter0tox 
-# Start time: 13:00:23 on Dec 05,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.counter0tox(counter0tox_arch)
-# End time: 13:00:48 on Dec 05,2024, Elapsed time: 0:00:25
-# Errors: 0, Warnings: 0
+# Loading work.bcd2ssd(seven_segments)
+add wave -position end  sim:/relogio/CC_ACn
+add wave -position end  sim:/relogio/clk_50MHz
+add wave -position end  sim:/relogio/rst
+add wave -position end  sim:/relogio/SSD_UNIHH
+add wave -position end  sim:/relogio/SSD_DEZHH
+add wave -position end  sim:/relogio/SSD_UNIMM
+add wave -position end  sim:/relogio/SSD_DEZMM
+add wave -position end  sim:/relogio/SSD_UNISS
+add wave -position end  sim:/relogio/SSD_DEZSS
+add wave -position end  sim:/relogio/clk_1sec
+add wave -position end  sim:/relogio/clk_1min
+add wave -position end  sim:/relogio/clk_1hr
+add wave -position end  sim:/relogio/bcd_unihh
+add wave -position end  sim:/relogio/bcd_dezhh
+add wave -position end  sim:/relogio/bcd_unimm
+add wave -position end  sim:/relogio/bcd_dezmm
+add wave -position end  sim:/relogio/bcd_uniss
+add wave -position end  sim:/relogio/bcd_dezss
+force -freeze sim:/relogio/clk_50MHz 1 0, 0 {50 ps} -r 100
+force -freeze sim:/relogio/rst 1 0
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /relogio/U1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /relogio/U1
+force -freeze sim:/relogio/rst 0 0
+run
+run
+run 10000
+run 60000
+run 1000
