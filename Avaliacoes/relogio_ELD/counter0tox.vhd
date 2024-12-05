@@ -7,8 +7,8 @@ use ieee.numeric_std.all;
 entity counter0tox is
 	generic(
 		-- Limites
-		D : natural := 5; 
-		U : natural := 9  
+		D : natural := 2; 
+		U : natural := 3  
 	);
 	port(
 		clk, reset: in std_logic;
@@ -40,12 +40,12 @@ begin
 
 	-- Próximo valor da unidade
 	next_unidade <= 
-		(reg_unidade + 1) when (reg_unidade < U and (reg_dezena /= D or reg_unidade /= U)) else -- + até U
+		(reg_unidade + 1) when (reg_unidade < 9 and (reg_dezena /= D or reg_unidade /= U)) else -- + até U
 		(others => '0'); -- Zera em D e U
 
 	-- Próximo valor da dezena
 	next_dezena <= 
-		(reg_dezena + 1) when (reg_unidade = U and reg_dezena < D) else -- + em u
+		(reg_dezena + 1) when (reg_unidade = 9 and reg_dezena < D) else -- + em u
 		(others => '0') when (reg_unidade = U and reg_dezena = D) else -- Reinicia no limite
 		reg_dezena; -- Mantem
 

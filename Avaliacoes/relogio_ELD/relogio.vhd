@@ -1,14 +1,13 @@
-
+-- unindo as partes
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all
+use ieee.numeric_std.all;
 
 entity relogio is
-        generic
-        (
-            CC_ACn: natural := 1
-        );
+   generic(
+      CC_ACn : natural := 1
+   );
         
 	port
 	(
@@ -73,11 +72,140 @@ architecture top_level of relogio is
 	
 	signal clk_1sec, clk_1min, clk_1hr : std_logic;
 	signal bcd_unihh, bcd_dezhh, bcd_unimm, bcd_dezmm, bcd_uniss, bcd_dezss : std_logic_vector(3 downto 0);
-	
-	
-	
-	
-	
 
+	begin
 
+	--clock
+    U1: counter0to50m
+        generic map (
+            LIMIT => 50000000 - 1, 
+            N_BITS => 26 
+        )
+        port map (
+            clk => clk_50MHz,
+            reset => rst,
+            clk_out => clk_1sec
+        );
 
+    --BCD segundos
+    U2: counter0tox
+        generic map (
+            D => 5, 
+            U => 9  
+        )
+        port map (
+            clk => clk_1sec,
+            reset => rst,
+            unidade => bcd_uniss,
+            dezena => bcd_dezss
+        );
+
+    -- BCD minutos
+    U3: counter0tox
+        generic map (
+            D => 5, 
+            U => 9  
+        )
+        port map (
+            clk => clk_1min,
+            reset => rst,
+            unidade => bcd_unimm,
+            dezena => bcd_dezmm
+        );
+
+    -- BCD horas
+    U4: counter0tox
+        generic map (
+            D => 2, 
+            U => 3  
+        )
+        port map (
+            clk => clk_1hr,
+            reset => rst,
+            unidade => bcd_unihh,
+            dezena => bcd_dezhh
+        );
+
+    -- Display de 7 segmentos
+    -- U segundos
+    U5: bcd2ssd
+        generic map (
+            CC_ACn => 1
+        )
+        port map (
+            BCD => bcd_uniss,
+            ZOP => '0',
+            DPin => '0',
+            SSD => SSD_UNISS,
+            DPout => open
+        );
+
+    -- D segundos
+    U6: bcd2ssd
+        generic map (
+            CC_ACn => 1
+        )
+        port map (
+            BCD => bcd_dezss,
+            ZOP => '0',
+            DPin => '0',
+            SSD => SSD_DEZSS,
+            DPout => open
+        );
+
+    -- U minutos
+    U7: bcd2ssd
+        generic map (
+            CC_ACn => 1
+        )
+        port map (
+            BCD => bcd_unimm,
+            ZOP => '0',
+            DPin => '0',
+            SSD => SSD_UNIMM,
+            DPout => open
+        );
+
+    -- D minutos
+    U8: bcd2ssd
+        generic map (
+            CC_ACn => 1
+        )
+        port map (
+            BCD => bcd_dezmm,
+            ZOP => '0',
+            DPin => '0',
+            SSD => SSD_DEZMM,
+            DPout => open
+        );
+
+    -- U horas
+    U9: bcd2ssd
+        generic map (
+            CC_ACn => 1
+        )
+        port map (
+            BCD => bcd_unihh,
+            ZOP => '0',
+            DPin => '0',
+            SSD => SSD_UNIHH,
+            DPout => open
+        );
+
+    -- D horas
+    U10: bcd2ssd
+        generic map (
+            CC_ACn => 1
+        )
+        port map (
+            BCD => bcd_dezhh,
+            ZOP => '0',
+            DPin => '0',
+            SSD => SSD_DEZHH,
+            DPout => open
+        );
+
+end architecture;
+
+	
+	

@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:32:49 on Dec 03,2024
+# Start time: 12:59:50 on Dec 05,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,6 +20,51 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity counter0tox
 # -- Compiling architecture counter0tox_arch of counter0tox
-# End time: 10:32:49 on Dec 03,2024, Elapsed time: 0:00:00
+# End time: 12:59:50 on Dec 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+vsim work.counter0tox(counter0tox_arch)
+# vsim work.counter0tox(counter0tox_arch) 
+# Start time: 12:59:54 on Dec 05,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.counter0tox(counter0tox_arch)
+add wave -position end  sim:/counter0tox/D
+add wave -position end  sim:/counter0tox/U
+add wave -position end  sim:/counter0tox/clk
+add wave -position end  sim:/counter0tox/reset
+add wave -position end  sim:/counter0tox/unidade
+add wave -position end  sim:/counter0tox/dezena
+add wave -position end  sim:/counter0tox/reg_unidade
+add wave -position end  sim:/counter0tox/reg_dezena
+add wave -position end  sim:/counter0tox/next_unidade
+add wave -position end  sim:/counter0tox/next_dezena
+do tb_counter0tox.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:00:22 on Dec 05,2024
+# vcom -reportprogress 300 -93 -work work ../../counter0tox.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter0tox
+# -- Compiling architecture counter0tox_arch of counter0tox
+# End time: 13:00:22 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:00:23 on Dec 05,2024, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0
+# vsim work.counter0tox 
+# Start time: 13:00:23 on Dec 05,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.counter0tox(counter0tox_arch)
+# End time: 13:00:48 on Dec 05,2024, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0

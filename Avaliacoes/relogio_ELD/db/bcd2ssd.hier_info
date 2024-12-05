@@ -1,0 +1,27 @@
+|counter0tox
+clk => reg_dezena[0].CLK
+clk => reg_dezena[1].CLK
+clk => reg_dezena[2].CLK
+clk => reg_dezena[3].CLK
+clk => reg_unidade[0].CLK
+clk => reg_unidade[1].CLK
+clk => reg_unidade[2].CLK
+clk => reg_unidade[3].CLK
+reset => reg_dezena[0].ACLR
+reset => reg_dezena[1].ACLR
+reset => reg_dezena[2].ACLR
+reset => reg_dezena[3].ACLR
+reset => reg_unidade[0].ACLR
+reset => reg_unidade[1].ACLR
+reset => reg_unidade[2].ACLR
+reset => reg_unidade[3].ACLR
+unidade[0] <= reg_unidade[0].DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= reg_unidade[1].DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= reg_unidade[2].DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= reg_unidade[3].DB_MAX_OUTPUT_PORT_TYPE
+dezena[0] <= reg_dezena[0].DB_MAX_OUTPUT_PORT_TYPE
+dezena[1] <= reg_dezena[1].DB_MAX_OUTPUT_PORT_TYPE
+dezena[2] <= reg_dezena[2].DB_MAX_OUTPUT_PORT_TYPE
+dezena[3] <= reg_dezena[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -10,25 +10,25 @@ z2
 cModel Technology
 Z0 dC:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/simulation/modelsim
 Ecounter0tox
-Z1 w1733230006
+Z1 w1733414365
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 0
+!i122 1
 R0
-Z5 8C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd
-Z6 FC:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd
+Z5 8../../counter0tox.vhd
+Z6 F../../counter0tox.vhd
 l0
 L7 1
-VOK7X0NgWKQ:H0F7;X@DgI1
-!s100 =LTZ8kP:`]0MT^=WKL3U92
+V=U]YlBzNkP9jURMC;9Ca11
+!s100 603C_:?`J61I=:4F_N8A23
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1733232769
+Z8 !s110 1733414422
 !i10b 1
-Z9 !s108 1733232769.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd|
-!s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd|
+Z9 !s108 1733414422.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../counter0tox.vhd|
+!s107 ../../counter0tox.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
@@ -36,19 +36,19 @@ Acounter0tox_arch
 R2
 R3
 R4
-DEx4 work 11 counter0tox 0 22 OK7X0NgWKQ:H0F7;X@DgI1
-!i122 0
+Z13 DEx4 work 11 counter0tox 0 22 =U]YlBzNkP9jURMC;9Ca11
+!i122 1
 l26
-L20 37
-V]<liDGo[4dSSQj4B9WmEZ1
-!s100 <=@OgKQK=8an3LH1oNHEe2
+Z14 L20 37
+Z15 Vh`=cg@?izHCo><R>hZ2mK0
+Z16 !s100 aV>8FmV<<0n@dmFY?GPai2
 R7
 31
 R8
 !i10b 1
 R9
 R10
-Z13 !s107 C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd|
+Z17 !s107 ../../counter0tox.vhd|
 !i113 1
 R11
 R12
