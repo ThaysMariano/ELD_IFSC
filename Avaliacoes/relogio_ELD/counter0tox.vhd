@@ -13,7 +13,8 @@ entity counter0tox is
 	port(
 		clk, reset: in std_logic;
 		unidade: out std_logic_vector(3 downto 0);
-		dezena: out std_logic_vector(3 downto 0)
+		dezena: out std_logic_vector(3 downto 0);
+		clk_out : out std_logic
 	);
 end entity;
 
@@ -48,6 +49,9 @@ begin
 		(reg_dezena + 1) when (reg_unidade = 9 and reg_dezena < D) else -- + em u
 		(others => '0') when (reg_unidade = U and reg_dezena = D) else -- Reinicia no limite
 		reg_dezena; -- Mantem
+		
+		-- clk_out
+		clk_out <= '0' when (reg_dezena = D and reg_unidade = U) else '1';
 
 	-- Std_logic_vector nas saídas
 	unidade <= std_logic_vector(reg_unidade);

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bcd2ssd
-Thu Dec 05 12:59:39 2024
+Mon Dec 09 22:59:29 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,10 +16,27 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |counter0tox
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |relogio
+ 12. Parameter Settings for User Entity Instance: counter0to50m:U1
+ 13. Parameter Settings for User Entity Instance: counter0tox:U2
+ 14. Parameter Settings for User Entity Instance: counter0tox:U3
+ 15. Parameter Settings for User Entity Instance: counter0tox:U4
+ 16. Parameter Settings for User Entity Instance: bcd2ssd:U5
+ 17. Parameter Settings for User Entity Instance: bcd2ssd:U6
+ 18. Parameter Settings for User Entity Instance: bcd2ssd:U7
+ 19. Parameter Settings for User Entity Instance: bcd2ssd:U8
+ 20. Parameter Settings for User Entity Instance: bcd2ssd:U9
+ 21. Parameter Settings for User Entity Instance: bcd2ssd:U10
+ 22. Port Connectivity Checks: "bcd2ssd:U10"
+ 23. Port Connectivity Checks: "bcd2ssd:U9"
+ 24. Port Connectivity Checks: "bcd2ssd:U8"
+ 25. Port Connectivity Checks: "bcd2ssd:U7"
+ 26. Port Connectivity Checks: "bcd2ssd:U6"
+ 27. Port Connectivity Checks: "bcd2ssd:U5"
+ 28. Port Connectivity Checks: "counter0tox:U4"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +63,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 05 12:59:39 2024       ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 09 22:59:29 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; bcd2ssd                                     ;
-; Top-level Entity Name              ; counter0tox                                 ;
+; Top-level Entity Name              ; relogio                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 11                                          ;
-;     Total combinational functions  ; 11                                          ;
-;     Dedicated logic registers      ; 6                                           ;
-; Total registers                    ; 6                                           ;
-; Total pins                         ; 10                                          ;
+; Total logic elements               ; 75                                          ;
+;     Total combinational functions  ; 75                                          ;
+;     Dedicated logic registers      ; 23                                          ;
+; Total registers                    ; 23                                          ;
+; Total pins                         ; 46                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -69,7 +86,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22A7        ;                    ;
-; Top-level entity name                                            ; counter0tox        ; bcd2ssd            ;
+; Top-level entity name                                            ; relogio            ; bcd2ssd            ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -166,54 +183,67 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                       ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
-; counter0tox.vhd                  ; yes             ; User VHDL File  ; C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; relogio.vhd                      ; yes             ; User VHDL File  ; C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd       ;         ;
+; bcd2ssd.vhd                      ; yes             ; User VHDL File  ; C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd       ;         ;
+; counter0to50m.vhd                ; yes             ; User VHDL File  ; C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd ;         ;
+; counter0tox.vhd                  ; yes             ; User VHDL File  ; C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd   ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 11             ;
-;                                             ;                ;
-; Total combinational functions               ; 11             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 8              ;
-;     -- 3 input functions                    ; 2              ;
-;     -- <=2 input functions                  ; 1              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 11             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 6              ;
-;     -- Dedicated logic registers            ; 6              ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 10             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; reg_unidade[0] ;
-; Maximum fan-out                             ; 8              ;
-; Total fan-out                               ; 74             ;
-; Average fan-out                             ; 2.00           ;
-+---------------------------------------------+----------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 75        ;
+;                                             ;           ;
+; Total combinational functions               ; 75        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 46        ;
+;     -- 3 input functions                    ; 20        ;
+;     -- <=2 input functions                  ; 9         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 75        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 23        ;
+;     -- Dedicated logic registers            ; 23        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 46        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 23        ;
+; Total fan-out                               ; 418       ;
+; Average fan-out                             ; 2.20      ;
++---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |counter0tox               ; 11 (11)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |counter0tox        ; counter0tox ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+---------------+--------------+
+; |relogio                   ; 75 (1)              ; 23 (0)                    ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |relogio                  ; relogio       ; work         ;
+;    |bcd2ssd:U10|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|bcd2ssd:U10      ; bcd2ssd       ; work         ;
+;    |bcd2ssd:U5|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|bcd2ssd:U5       ; bcd2ssd       ; work         ;
+;    |bcd2ssd:U6|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|bcd2ssd:U6       ; bcd2ssd       ; work         ;
+;    |bcd2ssd:U7|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|bcd2ssd:U7       ; bcd2ssd       ; work         ;
+;    |bcd2ssd:U8|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|bcd2ssd:U8       ; bcd2ssd       ; work         ;
+;    |bcd2ssd:U9|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|bcd2ssd:U9       ; bcd2ssd       ; work         ;
+;    |counter0to50m:U1|      ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|counter0to50m:U1 ; counter0to50m ; work         ;
+;    |counter0tox:U2|        ; 11 (11)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|counter0tox:U2   ; counter0tox   ; work         ;
+;    |counter0tox:U3|        ; 10 (10)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|counter0tox:U3   ; counter0tox   ; work         ;
+;    |counter0tox:U4|        ; 11 (11)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio|counter0tox:U4   ; counter0tox   ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -222,8 +252,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+----------------------------------------+
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
-; reg_dezena[2,3]                       ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 2 ;                                        ;
+; counter0tox:U4|reg_dezena[2,3]        ; Stuck at GND due to stuck port data_in ;
+; counter0tox:U3|reg_dezena[3]          ; Stuck at GND due to stuck port data_in ;
+; counter0tox:U2|reg_dezena[3]          ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
 
@@ -232,34 +264,226 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 6     ;
+; Total registers                              ; 23    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 6     ;
+; Number of registers using Asynchronous Clear ; 23    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |counter0tox|reg_dezena[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |relogio|counter0tox:U3|reg_dezena[2] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |relogio|counter0tox:U4|reg_dezena[1] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |relogio|counter0tox:U2|reg_dezena[1] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U9|ssd_int           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U10|ssd_int          ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U7|ssd_int           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U8|ssd_int           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U5|ssd_int           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U6|ssd_int           ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U9|ssd_int           ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U10|ssd_int          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U7|ssd_int           ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U8|ssd_int           ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U5|ssd_int           ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |relogio|bcd2ssd:U6|ssd_int           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 
 
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |counter0tox ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; D              ; 2     ; Signed Integer                                     ;
-; U              ; 3     ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |relogio ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; CC_ACn         ; 1     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter0to50m:U1 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; limit          ; 7     ; Signed Integer                       ;
+; n_bits         ; 3     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter0tox:U2 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; d              ; 5     ; Signed Integer                     ;
+; u              ; 9     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter0tox:U3 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; d              ; 5     ; Signed Integer                     ;
+; u              ; 9     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter0tox:U4 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; d              ; 2     ; Signed Integer                     ;
+; u              ; 3     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcd2ssd:U5 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; cc_acn         ; 1     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcd2ssd:U6 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; cc_acn         ; 1     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcd2ssd:U7 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; cc_acn         ; 1     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcd2ssd:U8 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; cc_acn         ; 1     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcd2ssd:U9 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; cc_acn         ; 1     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcd2ssd:U10 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; cc_acn         ; 1     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bcd2ssd:U10"                                                                         ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; zop   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bcd2ssd:U9"                                                                          ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; zop   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bcd2ssd:U8"                                                                          ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; zop   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bcd2ssd:U7"                                                                          ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; zop   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bcd2ssd:U6"                                                                          ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; zop   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bcd2ssd:U5"                                                                          ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; zop   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; dpout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "counter0tox:U4"                                                                        ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -267,18 +491,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 6                           ;
-;     CLR               ; 6                           ;
-; cycloneiii_lcell_comb ; 12                          ;
-;     normal            ; 12                          ;
+; boundary_port         ; 46                          ;
+; cycloneiii_ff         ; 23                          ;
+;     CLR               ; 23                          ;
+; cycloneiii_lcell_comb ; 76                          ;
+;     normal            ; 76                          ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 8                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 46                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.15                        ;
+; Average LUT depth     ; 1.83                        ;
 +-----------------------+-----------------------------+
 
 
@@ -297,12 +521,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 05 12:59:27 2024
+    Info: Processing started: Mon Dec 09 22:59:16 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bcd2ssd -c bcd2ssd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
-    Info (12022): Found design unit 1: relogio-top_level File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 29
+    Info (12022): Found design unit 1: relogio-top_level File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 31
     Info (12023): Found entity 1: relogio File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file bcd2ssd.vhd
     Info (12022): Found design unit 1: bcd2ssd-seven_segments File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd Line: 21
@@ -311,23 +535,29 @@ Info (12021): Found 2 design units, including 1 entities, in source file counter
     Info (12022): Found design unit 1: counter0to50m-contador File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd Line: 18
     Info (12023): Found entity 1: counter0to50m File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file counter0tox.vhd
-    Info (12022): Found design unit 1: counter0tox-counter0tox_arch File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 20
+    Info (12022): Found design unit 1: counter0tox-counter0tox_arch File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 21
     Info (12023): Found entity 1: counter0tox File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 7
-Info (12127): Elaborating entity "counter0tox" for the top level hierarchy
+Info (12127): Elaborating entity "relogio" for the top level hierarchy
+Info (12128): Elaborating entity "counter0to50m" for hierarchy "counter0to50m:U1" File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 82
+Info (12128): Elaborating entity "counter0tox" for hierarchy "counter0tox:U2" File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 94
+Info (12128): Elaborating entity "counter0tox" for hierarchy "counter0tox:U4" File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 122
+Info (12128): Elaborating entity "bcd2ssd" for hierarchy "bcd2ssd:U5" File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 137
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "dezena[2]" is stuck at GND File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 16
-    Warning (13410): Pin "dezena[3]" is stuck at GND File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 16
+    Warning (13410): Pin "SSD_DEZHH[1]" is stuck at GND File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 11 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Thu Dec 05 12:59:39 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:26
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "stop" File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 17
+    Warning (15610): No output dependent on input pin "zopIn" File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 18
+Info (21057): Implemented 121 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 75 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Mon Dec 09 22:59:29 2024
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:27
 
 

@@ -14,6 +14,8 @@ entity relogio is
 		-- Input ports
 		clk_50MHz : in std_logic;
 		rst : in std_logic;
+		stop: in std_logic;
+		zopIn: in std_logic;
 
 		-- Output ports
 		SSD_UNIHH : out std_logic_vector(6 downto 0);
@@ -47,7 +49,7 @@ architecture top_level of relogio is
 	component counter0to50m is
 		generic(
 			LIMIT : natural := 22;
-			N_BITS: natural := 5 --log na base 2 de limite (0 a 31)
+			N_BITS: natural := 5 --log na base 2 limite (0 a 31)
 		);
 		port(
 			clk, reset: in std_logic;
@@ -64,7 +66,8 @@ architecture top_level of relogio is
 		port(
 			clk, reset: in std_logic;
 			unidade: out std_logic_vector(3 downto 0);
-			dezena: out std_logic_vector(3 downto 0)
+			dezena: out std_logic_vector(3 downto 0);
+			clk_out : out std_logic
 		);
 	end component;
 	
@@ -78,8 +81,8 @@ architecture top_level of relogio is
 	--clock
     U1: counter0to50m
         generic map (
-            LIMIT => 50000000 - 1, 
-            N_BITS => 26 
+            LIMIT => 7, 
+            N_BITS => 3 
         )
         port map (
             clk => clk_50MHz,
@@ -97,7 +100,8 @@ architecture top_level of relogio is
             clk => clk_1sec,
             reset => rst,
             unidade => bcd_uniss,
-            dezena => bcd_dezss
+            dezena => bcd_dezss,
+				clk_out => clk_1min
         );
 
     -- BCD minutos
@@ -110,7 +114,8 @@ architecture top_level of relogio is
             clk => clk_1min,
             reset => rst,
             unidade => bcd_unimm,
-            dezena => bcd_dezmm
+            dezena => bcd_dezmm,
+				clk_out => clk_1hr
         );
 
     -- BCD horas
@@ -123,7 +128,8 @@ architecture top_level of relogio is
             clk => clk_1hr,
             reset => rst,
             unidade => bcd_unihh,
-            dezena => bcd_dezhh
+            dezena => bcd_dezhh,
+				clk_out => open
         );
 
     -- Display de 7 segmentos
