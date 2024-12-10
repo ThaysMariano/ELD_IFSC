@@ -27,14 +27,21 @@ begin
 	begin
 		if (reset='1') then
 			r_reg <= (others=>'0');
-		elsif (clk'event and clk='1') then
-			r_reg <= r_next;
+		elsif (clk'event and clk='1') then  
+              r_reg <= r_next; 
 		end if;
 	end process;
 	
 	-- next-state logic
 	r_next <= (others=>'0') when r_reg=(LIMIT-1) else r_reg + 1;
 	
+	
 	-- output logic
 	clk_out <= '0' when r_reg = to_unsigned(LIMIT-1,N_BITS) else '1';
+	
+	
+
+	
+	
+	
 end architecture;

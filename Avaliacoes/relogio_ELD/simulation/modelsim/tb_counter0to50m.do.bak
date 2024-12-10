@@ -5,7 +5,6 @@ vsim work.counter0to50m
 
 add wave -position end  sim:/counter0to50m/clk
 add wave -position end  sim:/counter0to50m/reset
-add wave -position end  sim:/counter0to50m/stop
 add wave -position end -radix unsigned sim:/counter0to50m/r_reg
 add wave -position end  sim:/counter0to50m/clk_out
 
