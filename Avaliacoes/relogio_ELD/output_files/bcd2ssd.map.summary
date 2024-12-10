@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Dec 10 10:33:49 2024
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Tue Dec 10 14:43:44 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 Revision Name : bcd2ssd
-Top-level Entity Name : counter0tox
+Top-level Entity Name : counter0to50m
 Family : Cyclone IV E
-Total logic elements : 12
-    Total combinational functions : 12
-    Dedicated logic registers : 7
-Total registers : 7
-Total pins : 12
+Total logic elements : 10
+    Total combinational functions : 10
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 5
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

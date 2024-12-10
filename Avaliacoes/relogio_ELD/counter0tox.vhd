@@ -11,10 +11,10 @@ entity counter0tox is
 		U : natural := 9  
 	);
 	port(
-		clk, reset: in std_logic;
+		clk, reset, enable: in std_logic;
 		unidade: out std_logic_vector(3 downto 0);
 		dezena: out std_logic_vector(3 downto 0);
-		clk_out : out std_logic
+		clk_out, enable_out : out std_logic
 	);
 end entity;
 
@@ -28,13 +28,23 @@ begin
 	-- Processo síncrono para atualizar os registradores
 	process(clk, reset)
 	
+-- max_pulse	
+-- enable - enable_out dura apenas 1 clock
+-- else r_reg <= r_reg
+
+	
 	begin
 		if reset = '1' then
 			reg_unidade <= (others => '0');
 			reg_dezena <= (others => '0');
 		elsif rising_edge(clk) then
-			reg_unidade <= next_unidade;
-			reg_dezena <= next_dezena;
+			if(enable = '1') then
+				reg_unidade <= next_unidade;
+				reg_dezena <= next_dezena;
+			else 
+				reg_unidade <= reg_unidade;
+				reg_dezena <= reg_dezena;
+			end if;
 		end if;
 	end process;
 
@@ -44,26 +54,27 @@ begin
 		(others => '0'); -- Zera em D e U
 		
 		
-			-- '0' when (stop = '1') else reg_unidade
-		
-		
-
 	-- Próximo valor da dezena
 	next_dezena <= 
 		(reg_dezena + 1) when (reg_unidade = U and reg_dezena < D) else -- + em u
 		(others => '0') when (reg_unidade = U and reg_dezena = D) else -- Reinicia no limite
 		reg_dezena; -- Mantem
 		
-		
-			-- '0' when (stop = '1') else reg_dezena
-		
-		
+
 		-- clk_out
 		clk_out <= '0' when (reg_dezena = D and reg_unidade = U) else '1';
 
 	-- Std_logic_vector nas saídas
 	unidade <= std_logic_vector(reg_unidade);
 	dezena <= std_logic_vector(reg_dezena);
+	
+	
+	
+					
+			-- '0' when (stop = '1') else reg_dezena
+		
+			-- '0' when (stop = '1') else reg_unidade
+		
 
 end architecture;
 

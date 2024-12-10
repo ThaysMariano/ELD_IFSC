@@ -1,6 +1,6 @@
 Analysis & Synthesis report for bcd2ssd
-Tue Dec 10 10:33:49 2024
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Tue Dec 10 14:43:44 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
 ---------------------
@@ -13,13 +13,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |counter0tox
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |counter0to50m
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -43,24 +41,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 10 10:33:49 2024       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                      ; bcd2ssd                                     ;
-; Top-level Entity Name              ; counter0tox                                 ;
-; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 12                                          ;
-;     Total combinational functions  ; 12                                          ;
-;     Dedicated logic registers      ; 7                                           ;
-; Total registers                    ; 7                                           ;
-; Total pins                         ; 12                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Dec 10 14:43:44 2024           ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
+; Revision Name                      ; bcd2ssd                                         ;
+; Top-level Entity Name              ; counter0to50m                                   ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 10                                              ;
+;     Total combinational functions  ; 10                                              ;
+;     Dedicated logic registers      ; 5                                               ;
+; Total registers                    ; 5                                               ;
+; Total pins                         ; 5                                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -69,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22A7        ;                    ;
-; Top-level entity name                                            ; counter0tox        ; bcd2ssd            ;
+; Top-level entity name                                            ; counter0to50m      ; bcd2ssd            ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,77 +152,68 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 32          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                       ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
-; counter0tox.vhd                  ; yes             ; User VHDL File  ; C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
+; counter0to50m.vhd                ; yes             ; User VHDL File  ; /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 12             ;
-;                                             ;                ;
-; Total combinational functions               ; 12             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 10             ;
-;     -- 3 input functions                    ; 2              ;
-;     -- <=2 input functions                  ; 0              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 12             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 7              ;
-;     -- Dedicated logic registers            ; 7              ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 12             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; reg_unidade[0] ;
-; Maximum fan-out                             ; 7              ;
-; Total fan-out                               ; 87             ;
-; Average fan-out                             ; 2.02           ;
-+---------------------------------------------+----------------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 10       ;
+;                                             ;          ;
+; Total combinational functions               ; 10       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 1        ;
+;     -- 3 input functions                    ; 3        ;
+;     -- <=2 input functions                  ; 6        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 6        ;
+;     -- arithmetic mode                      ; 4        ;
+;                                             ;          ;
+; Total registers                             ; 5        ;
+;     -- Dedicated logic registers            ; 5        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 5        ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; r_reg[0] ;
+; Maximum fan-out                             ; 5        ;
+; Total fan-out                               ; 50       ;
+; Average fan-out                             ; 2.00     ;
++---------------------------------------------+----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |counter0tox               ; 12 (12)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |counter0tox        ; counter0tox ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+---------------+--------------+
+; |counter0to50m             ; 10 (10)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |counter0to50m      ; counter0to50m ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; reg_dezena[3]                         ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1 ;                                        ;
-+---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -232,34 +221,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 7     ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 7     ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 5     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |counter0tox|reg_dezena[0]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |counter0tox|reg_unidade[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |counter0tox ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; D              ; 5     ; Signed Integer                                     ;
-; U              ; 9     ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |counter0to50m ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; LIMIT          ; 22    ; Signed Integer                                       ;
+; N_BITS         ; 5     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -268,17 +247,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 12                          ;
-; cycloneiii_ff         ; 7                           ;
-;     CLR               ; 7                           ;
-; cycloneiii_lcell_comb ; 13                          ;
-;     normal            ; 13                          ;
+; boundary_port         ; 5                           ;
+; cycloneiii_ff         ; 5                           ;
+;     ENA CLR           ; 5                           ;
+; cycloneiii_lcell_comb ; 12                          ;
+;     arith             ; 4                           ;
+;         2 data inputs ; 4                           ;
+;     normal            ; 8                           ;
 ;         0 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 10                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.52                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.03                        ;
 +-----------------------+-----------------------------+
 
 
@@ -296,37 +279,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 10 10:33:37 2024
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+    Info: Processing started: Tue Dec 10 14:43:38 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bcd2ssd -c bcd2ssd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
-    Info (12022): Found design unit 1: relogio-top_level File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 31
-    Info (12023): Found entity 1: relogio File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 7
+    Info (12022): Found design unit 1: relogio-top_level File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 31
+    Info (12023): Found entity 1: relogio File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/relogio.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file bcd2ssd.vhd
-    Info (12022): Found design unit 1: bcd2ssd-seven_segments File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd Line: 21
-    Info (12023): Found entity 1: bcd2ssd File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd Line: 7
+    Info (12022): Found design unit 1: bcd2ssd-seven_segments File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd Line: 21
+    Info (12023): Found entity 1: bcd2ssd File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/bcd2ssd.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file counter0to50m.vhd
-    Info (12022): Found design unit 1: counter0to50m-contador File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd Line: 18
-    Info (12023): Found entity 1: counter0to50m File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd Line: 7
+    Info (12022): Found design unit 1: counter0to50m-contador File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd Line: 18
+    Info (12023): Found entity 1: counter0to50m File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file counter0tox.vhd
-    Info (12022): Found design unit 1: counter0tox-counter0tox_arch File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 21
-    Info (12023): Found entity 1: counter0tox File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 7
-Info (12127): Elaborating entity "counter0tox" for the top level hierarchy
+    Info (12022): Found design unit 1: counter0tox-counter0tox_arch File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 21
+    Info (12023): Found entity 1: counter0tox File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 7
+Info (12127): Elaborating entity "counter0to50m" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at counter0to50m.vhd(14): used implicit default value for signal "enable_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd Line: 14
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "dezena[3]" is stuck at GND File: C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/relogio_ELD/counter0tox.vhd Line: 16
+    Warning (13410): Pin "enable_out" is stuck at GND File: /home/aluno/ELD_IFSC/Avaliacoes/relogio_ELD/counter0to50m.vhd Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 12 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Tue Dec 10 10:33:49 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:27
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 10 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 479 megabytes
+    Info: Processing ended: Tue Dec 10 14:43:44 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:11
 
 

@@ -10,8 +10,8 @@ entity counter0to50m is
 		N_BITS: natural := 5 --log na base 2 de limite (0 a 31)
 	);
 	port(
-		clk, reset: in std_logic;
-		clk_out: out std_logic
+		clk, reset, enable, stop: in std_logic;
+		clk_out, enable_out: out std_logic
 	);
 end entity;
 
@@ -22,13 +22,24 @@ architecture contador of counter0to50m is
 	
 begin
 
+-- stop
+-- max_pulse
+
+-- enable - enable_out dura apenas 1 clock no final - em enable ele conta 
+-- else r_reg <= r_reg
+
+
 -- register
 	process(clk,reset)
 	begin
 		if (reset='1') then
 			r_reg <= (others=>'0');
-		elsif (clk'event and clk='1') then  
-              r_reg <= r_next; 
+		elsif (rising_edge(clk)) then  
+				if (enable = '1') then
+					r_reg <= r_next; 
+				 else 
+					r_reg <= r_reg;
+				end if;	
 		end if;
 	end process;
 	
@@ -39,7 +50,8 @@ begin
 	-- output logic
 	clk_out <= '0' when r_reg = to_unsigned(LIMIT-1,N_BITS) else '1';
 	
-	
+	--- clk interno no process
+	--  0 else clock (stop)
 
 	
 	
