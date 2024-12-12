@@ -1,0 +1,183 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/simulation/modelsim
+Ebcd2ssd
+Z1 w1733970494
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+R0
+Z5 8../../bcd2ssd.vhd
+Z6 F../../bcd2ssd.vhd
+l0
+L7 1
+VEKzX?oF8M0J18G>[`FVTb2
+!s100 :hFY<4aFKE[a5Wnl?4XLU0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1734034446
+!i10b 1
+Z9 !s108 1734034446.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../bcd2ssd.vhd|
+Z11 !s107 ../../bcd2ssd.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aseven_segments
+R2
+R3
+R4
+DEx4 work 7 bcd2ssd 0 22 EKzX?oF8M0J18G>[`FVTb2
+!i122 4
+l22
+L20 31
+V?FDZ;aV`BbR;lYkWhLcFz3
+!s100 Kl7WTDF>Cb4e_RZKL7jC:3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econtador
+Z14 w1734005898
+R2
+R3
+R4
+!i122 5
+R0
+Z15 8../../contador.vhd
+Z16 F../../contador.vhd
+l0
+L7 1
+VA109MCCFZ6TSo=QWBf8Ro3
+!s100 ]kO8]kGiAaB8?;=4dLXHN3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|../../contador.vhd|
+Z18 !s107 ../../contador.vhd|
+!i113 1
+R12
+R13
+Aarquitetura_contador
+R2
+R3
+R4
+DEx4 work 8 contador 0 22 A109MCCFZ6TSo=QWBf8Ro3
+!i122 5
+l26
+L20 43
+Vf7a0PPfZQS0nOm:3;T2Y41
+!s100 93VcnY2VY[QdS?nMoeR=b3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Edivisorclock
+Z19 w1734034065
+R2
+R3
+R4
+!i122 6
+R0
+Z20 8../../divisorClock.vhd
+Z21 F../../divisorClock.vhd
+l0
+L8 1
+V[M`kn5U09623?A@JOZDE=3
+!s100 kh[OJzjESdd1XRc?f`6?63
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|../../divisorClock.vhd|
+Z23 !s107 ../../divisorClock.vhd|
+!i113 1
+R12
+R13
+Aarquitetura
+R2
+R3
+R4
+DEx4 work 12 divisorclock 0 22 [M`kn5U09623?A@JOZDE=3
+!i122 6
+l39
+L19 43
+VXQ7oKkWzCCIGfSHkkgj;I2
+!s100 HYkgnIV1XEM7CZ`m:=CA]1
+R7
+31
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Erelogio
+Z24 w1734034258
+R2
+R3
+R4
+!i122 7
+R0
+Z25 8../../relogio.vhd
+Z26 F../../relogio.vhd
+l0
+L7 1
+Vnzb]?9U3COMa9^EHWF7OG1
+!s100 Do8MMT[W]_kQOMG<DMROV1
+R7
+31
+R8
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-93|-work|work|../../relogio.vhd|
+!s107 ../../relogio.vhd|
+!i113 1
+R12
+R13
+Atop_level
+R2
+R3
+R4
+Z28 DEx4 work 7 relogio 0 22 nzb]?9U3COMa9^EHWF7OG1
+!i122 7
+l78
+Z29 L31 187
+Z30 Vj1e[4EOLbnS7c5mV9a8>C3
+Z31 !s100 Ia@h?PYNVKJ:g?Da6BgQj0
+R7
+31
+R8
+!i10b 1
+R9
+R27
+Z32 !s107 ../../relogio.vhd|
+!i113 1
+R12
+R13

@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SSD_UNIHH[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIHH[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIHH[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIHH[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIHH[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIHH[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIHH[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZHH[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZHH[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZHH[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZHH[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZHH[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZHH[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZHH[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIMM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIMM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIMM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIMM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIMM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIMM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNIMM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZMM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZMM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZMM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZMM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZMM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZMM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZMM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNISS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNISS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNISS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNISS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNISS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNISS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_UNISS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZSS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZSS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZSS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZSS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZSS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZSS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SSD_DEZSS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "zopIn",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "clk50MHz",
+					"strict" : false
+				},
+				{
+					"name" : "stopIn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
