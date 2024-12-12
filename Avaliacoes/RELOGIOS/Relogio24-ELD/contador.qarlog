@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/contador.qarlog
+
+Archive:	C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/contador.qar
+Date:		Thu Dec 12 09:33:56 2024
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/bcd2ssd.vhd
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/contador.qpf
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/contador.qsf
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/contador.vhd
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/divisorClock.vhd
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/relogio.vhd
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/simulation/modelsim/tb_bsd2ssd.do
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/simulation/modelsim/tb_contador.do
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/simulation/modelsim/tb_divisorClock.do
+C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/simulation/modelsim/tb_relogio.do
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

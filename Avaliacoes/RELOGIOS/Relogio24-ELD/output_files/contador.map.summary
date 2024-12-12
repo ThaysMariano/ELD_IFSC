@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Dec 12 09:23:48 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : contador
+Top-level Entity Name : divisorClock
+Family : Cyclone IV E
+Total logic elements : 10
+    Total combinational functions : 10
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

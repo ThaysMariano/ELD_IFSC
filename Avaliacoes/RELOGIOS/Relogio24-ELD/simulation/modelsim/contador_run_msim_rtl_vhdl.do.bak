@@ -1,0 +1,12 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/contador.vhd}
+vcom -93 -work work {C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/divisorClock.vhd}
+vcom -93 -work work {C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/bcd2ssd.vhd}
+vcom -93 -work work {C:/Users/thays/Desktop/eld_areaT/Relogio24-ELD/relogio.vhd}
+
