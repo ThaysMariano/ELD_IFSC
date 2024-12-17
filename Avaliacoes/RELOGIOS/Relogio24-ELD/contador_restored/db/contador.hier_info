@@ -58,6 +58,7 @@ reset => r_reg[0].ACLR
 reset => r_reg[1].ACLR
 reset => r_reg[2].ACLR
 reset => r_reg[3].ACLR
+reset => r_reg[4].ACLR
 stop => clk_interno.OUTPUTSELECT
 clk_out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 

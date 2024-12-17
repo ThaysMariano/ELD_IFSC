@@ -8,9 +8,9 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/aluno/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/simulation/modelsim
+Z0 dC:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/simulation/modelsim
 Ebcd2ssd
-Z1 w1733970494
+Z1 w1734038536
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
@@ -24,9 +24,9 @@ VEKzX?oF8M0J18G>[`FVTb2
 !s100 :hFY<4aFKE[a5Wnl?4XLU0
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1734034446
+Z8 !s110 1734365255
 !i10b 1
-Z9 !s108 1734034446.000000
+Z9 !s108 1734365255.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|../../bcd2ssd.vhd|
 Z11 !s107 ../../bcd2ssd.vhd|
 !i113 1
@@ -53,14 +53,14 @@ R11
 R12
 R13
 Econtador
-Z14 w1734005898
+R1
 R2
 R3
 R4
 !i122 5
 R0
-Z15 8../../contador.vhd
-Z16 F../../contador.vhd
+Z14 8../../contador.vhd
+Z15 F../../contador.vhd
 l0
 L7 1
 VA109MCCFZ6TSo=QWBf8Ro3
@@ -70,8 +70,8 @@ R7
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-93|-work|work|../../contador.vhd|
-Z18 !s107 ../../contador.vhd|
+Z16 !s90 -reportprogress|300|-93|-work|work|../../contador.vhd|
+Z17 !s107 ../../contador.vhd|
 !i113 1
 R12
 R13
@@ -82,28 +82,28 @@ R4
 DEx4 work 8 contador 0 22 A109MCCFZ6TSo=QWBf8Ro3
 !i122 5
 l26
-L20 43
-Vf7a0PPfZQS0nOm:3;T2Y41
-!s100 93VcnY2VY[QdS?nMoeR=b3
+L20 44
+VE:=jPYl;KK;]3K_jMNQHW2
+!s100 _Blm^SZoEiAciMc0mDmhn1
 R7
 31
 R8
 !i10b 1
 R9
+R16
 R17
-R18
 !i113 1
 R12
 R13
 Edivisorclock
-Z19 w1734034065
+R1
 R2
 R3
 R4
 !i122 6
 R0
-Z20 8../../divisorClock.vhd
-Z21 F../../divisorClock.vhd
+Z18 8../../divisorClock.vhd
+Z19 F../../divisorClock.vhd
 l0
 L8 1
 V[M`kn5U09623?A@JOZDE=3
@@ -113,8 +113,8 @@ R7
 R8
 !i10b 1
 R9
-Z22 !s90 -reportprogress|300|-93|-work|work|../../divisorClock.vhd|
-Z23 !s107 ../../divisorClock.vhd|
+Z20 !s90 -reportprogress|300|-93|-work|work|../../divisorClock.vhd|
+Z21 !s107 ../../divisorClock.vhd|
 !i113 1
 R12
 R13
@@ -133,20 +133,20 @@ R7
 R8
 !i10b 1
 R9
-R22
-R23
+R20
+R21
 !i113 1
 R12
 R13
 Erelogio
-Z24 w1734034258
+Z22 w1734365177
 R2
 R3
 R4
 !i122 7
 R0
-Z25 8../../relogio.vhd
-Z26 F../../relogio.vhd
+Z23 8../../relogio.vhd
+Z24 F../../relogio.vhd
 l0
 L7 1
 Vnzb]?9U3COMa9^EHWF7OG1
@@ -156,7 +156,7 @@ R7
 R8
 !i10b 1
 R9
-Z27 !s90 -reportprogress|300|-93|-work|work|../../relogio.vhd|
+Z25 !s90 -reportprogress|300|-93|-work|work|../../relogio.vhd|
 !s107 ../../relogio.vhd|
 !i113 1
 R12
@@ -165,19 +165,19 @@ Atop_level
 R2
 R3
 R4
-Z28 DEx4 work 7 relogio 0 22 nzb]?9U3COMa9^EHWF7OG1
+Z26 DEx4 work 7 relogio 0 22 nzb]?9U3COMa9^EHWF7OG1
 !i122 7
 l78
-Z29 L31 187
-Z30 Vj1e[4EOLbnS7c5mV9a8>C3
-Z31 !s100 Ia@h?PYNVKJ:g?Da6BgQj0
+Z27 L31 187
+Z28 VSIfWk]II`LMPblfZ6d9hH2
+Z29 !s100 hIOXUS0@34ELIIX4c^Uj=1
 R7
 31
 R8
 !i10b 1
 R9
-R27
-Z32 !s107 ../../relogio.vhd|
+R25
+Z30 !s107 ../../relogio.vhd|
 !i113 1
 R12
 R13

@@ -82,7 +82,7 @@ architecture top_level of relogio is
     U1: divisorClock
         generic map (
 
-            MAX=> 10           
+            MAX=> 20           
         )
         port map (
             clk => clk50MHz,
