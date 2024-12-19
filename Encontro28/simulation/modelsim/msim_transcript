@@ -1,0 +1,189 @@
+# do fifo_sync_ctrl4_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/home/aluno/ELD_IFSC/Encontro28/fifo_sync_ctrl4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:17:28 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELD_IFSC/Encontro28/fifo_sync_ctrl4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fifo_sync_ctrl4
+# -- Compiling architecture enlarged_bin_arch of fifo_sync_ctrl4
+# End time: 17:17:28 on Dec 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+do tb_fifo
+# Cannot open macro file: tb_fifo
+do tb_fifo3.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:18:21 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work ../../fifo_sync_ctrl4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fifo_sync_ctrl4
+# -- Compiling architecture enlarged_bin_arch of fifo_sync_ctrl4
+# End time: 17:18:21 on Dec 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.fifo_sync_ctrl4 
+# Start time: 17:18:21 on Dec 19,2024
+# //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 6.1.0-28-amd64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fifo_sync_ctrl4(enlarged_bin_arch)
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: aluno  Hostname: sje-lin-sidi-918566  ProcessID: 31539
+#           Attempting to use alternate WLF file "./wlftZeCg7g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftZeCg7g
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /fifo_sync_ctrl4
+add wave -position end  sim:/fifo_sync_ctrl4/w_ptr_reg
+add wave -position end  sim:/fifo_sync_ctrl4/w_ptr_reg
+add wave -position end  sim:/fifo_sync_ctrl4/r_ptr_reg
+do tb_fifo3.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:22:01 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work ../../fifo_sync_ctrl4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fifo_sync_ctrl4
+# -- Compiling architecture enlarged_bin_arch of fifo_sync_ctrl4
+# End time: 17:22:01 on Dec 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:22:01 on Dec 19,2024, Elapsed time: 0:03:40
+# Errors: 0, Warnings: 3
+# vsim work.fifo_sync_ctrl4 
+# Start time: 17:22:01 on Dec 19,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fifo_sync_ctrl4(enlarged_bin_arch)
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: aluno  Hostname: sje-lin-sidi-918566  ProcessID: 31539
+#           Attempting to use alternate WLF file "./wlftiBl5AJ".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftiBl5AJ
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /fifo_sync_ctrl4
+do tb_fifo3.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:22:32 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work ../../fifo_sync_ctrl4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fifo_sync_ctrl4
+# -- Compiling architecture enlarged_bin_arch of fifo_sync_ctrl4
+# End time: 17:22:32 on Dec 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:22:33 on Dec 19,2024, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 3
+# vsim work.fifo_sync_ctrl4 
+# Start time: 17:22:33 on Dec 19,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fifo_sync_ctrl4(enlarged_bin_arch)
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: aluno  Hostname: sje-lin-sidi-918566  ProcessID: 31539
+#           Attempting to use alternate WLF file "./wlftNEY4ir".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftNEY4ir
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /fifo_sync_ctrl4
+do tb_fifo3.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:23:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work ../../fifo_sync_ctrl4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fifo_sync_ctrl4
+# -- Compiling architecture enlarged_bin_arch of fifo_sync_ctrl4
+# End time: 17:23:50 on Dec 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:23:50 on Dec 19,2024, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 3
+# vsim work.fifo_sync_ctrl4 
+# Start time: 17:23:50 on Dec 19,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fifo_sync_ctrl4(enlarged_bin_arch)
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: aluno  Hostname: sje-lin-sidi-918566  ProcessID: 31539
+#           Attempting to use alternate WLF file "./wlftt34NoC".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftt34NoC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /fifo_sync_ctrl4
