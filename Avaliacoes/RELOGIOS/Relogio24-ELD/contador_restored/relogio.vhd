@@ -13,7 +13,7 @@ entity relogio is
 	(
 		-- Input ports
 		clk50MHz : in std_logic;
-		rst : in std_logic;
+		rst_in : in std_logic;
 	   zopIn: in std_logic;
 		stopIn : in std_logic;
 
@@ -72,23 +72,23 @@ architecture top_level of relogio is
 	
 	--declarando fios internos
 	
-	signal clk_1sec, clk_1min, clk_1hr : std_logic;
+	signal clk_1sec, clk_1min, clk_1hr, rst : std_logic;
 	signal bcd_unihh, bcd_dezhh, bcd_unimm, bcd_dezmm, bcd_uniss, bcd_dezss : std_logic_vector(3 downto 0);
 	
 	begin
-	
+	rst <= not rst_in;
 
 	--clock
     U1: divisorClock
         generic map (
 
-            MAX=> 20           
+            MAX=> 500000           
         )
         port map (
             clk => clk50MHz,
             reset => rst,
             clk_out => clk_1sec,
-				stop => stopIn				--STOP
+				stop => stopIn				
         );
 
     --BCD segundos
@@ -141,7 +141,7 @@ architecture top_level of relogio is
         )
         port map (
             BCD => bcd_uniss,
-            ZOP => '0',
+            ZOP => '1',
             DPin => '0',
             SSD => SSD_UNISS
 --           DPout => open
@@ -167,10 +167,10 @@ architecture top_level of relogio is
         )
         port map (
             BCD => bcd_unimm,
-            ZOP => '0',
+            ZOP => '1',
             DPin => '0',
             SSD => SSD_UNIMM
- --          DPout => open
+--          DPout => open
         );
 
     -- D minutos
@@ -193,10 +193,10 @@ architecture top_level of relogio is
         )
         port map (
             BCD => bcd_unihh,
-            ZOP => '0',
+            ZOP => '1',
             DPin => '0',
             SSD => SSD_UNIHH
- --          DPout => open
+--           DPout => open
         );
 
     -- D horas
@@ -212,6 +212,6 @@ architecture top_level of relogio is
 --            DPout => open
         );
 		  
-		  
+	-- corrigir segundos pulando de 2 em dois
 
 end architecture;

@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY relogio
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:56:34  DECEMBER 10, 2024"
-set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Standard Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -78,7 +78,6 @@ set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_location_assignment PIN_Y2 -to clk50MHz
-set_location_assignment PIN_M23 -to rst
 set_location_assignment PIN_AB28 -to stopIn
 set_location_assignment PIN_AC28 -to zopIn
 set_location_assignment PIN_G18 -to SSD_UNISS[0]
@@ -123,4 +122,5 @@ set_location_assignment PIN_AH19 -to SSD_DEZHH[3]
 set_location_assignment PIN_AG19 -to SSD_DEZHH[4]
 set_location_assignment PIN_AF18 -to SSD_DEZHH[5]
 set_location_assignment PIN_AH18 -to SSD_DEZHH[6]
+set_location_assignment PIN_M23 -to rst_in
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
