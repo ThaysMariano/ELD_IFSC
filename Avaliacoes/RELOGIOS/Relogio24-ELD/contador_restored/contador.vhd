@@ -13,7 +13,8 @@ entity contador is
 	port(
 		clk, reset: in std_logic;
 		uni, dez: out std_logic_vector(3 downto 0);
-		clk_out: out std_logic
+		clk_out: out std_logic;
+		up, down : in std_logic
 	);
 end entity;
 
@@ -33,10 +34,34 @@ begin
 			reg_uni<= (others => '0');
 			reg_dez <= (others => '0');
 		elsif rising_edge(clk) then
-			reg_uni<= next_uni;
-			reg_dez<= next_dez;
+			
+
+			-- (?)
+-- Se botao Up=1, Se uni=Max, add na dezena, se não add na unidade
+-- Se botao Down=1, Se uni=0, diminui da dezena, se não diminui da unidade
+-- Se nenhum botao ativo, segue a contagem normal
+			
+   		if up = '1' then 
+				if reg_uni <= U then
+					reg_dez <= next_dez+1;
+				else 
+					reg_uni <= reg_uni +1;
+				end if;
+			elsif down = '1' then
+				if reg_uni <= '0'
+					reg_dez <= next_dez -1;
+				else 
+					reg_uni <= reg_uni-1;
+			elsif up = '0' and down = '0' then
+				reg_uni<= next_uni;
+				reg_dez<= next_dez;
+			end if;
+			
 		end if;
 	end process;
+	
+	
+	
 	
 
 	-- unidade
@@ -53,6 +78,8 @@ begin
 	-- clk_out
 	clk_out <= '0' when (reg_dez= D and reg_uni= U) else '1';
 	
+	
+	
 
 	-- saídas
 	uni <= std_logic_vector(reg_uni);
@@ -64,6 +91,6 @@ end architecture;
 
 
 -- Pode escolher as dezenas e unidades para iniciar por meio de dois botoes, alterar opcao e ++
-
+-- um botao para selecionar os displays, cada 1 troca o grupo de displays
 
 

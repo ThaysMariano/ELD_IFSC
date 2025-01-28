@@ -1,0 +1,23 @@
+Quartus Prime Archive log --	C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/ThaysRelogio.qarlog
+
+Archive:	C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/ThaysRelogio.qar
+Date:		Sun Jan 26 21:31:07 2025
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/assignment_defaults.qdf
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/bcd2ssd.vhd
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/contador.qpf
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/contador.qsf
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/contador.vhd
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/divisorClock.vhd
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/output_files/contador.sof
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/relogio.vhd
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/simulation/modelsim/tb_bsd2ssd.do
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/simulation/modelsim/tb_contador.do
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/simulation/modelsim/tb_divisorClock.do
+C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/simulation/modelsim/tb_relogio.do
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

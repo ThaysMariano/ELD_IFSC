@@ -8,9 +8,9 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/simulation/modelsim
+Z0 dC:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/simulation/modelsim
 Ebcd2ssd
-Z1 w1734038536
+Z1 w1737661262
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
@@ -24,9 +24,9 @@ VEKzX?oF8M0J18G>[`FVTb2
 !s100 :hFY<4aFKE[a5Wnl?4XLU0
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1734365255
+Z8 !s110 1737940736
 !i10b 1
-Z9 !s108 1734365255.000000
+Z9 !s108 1737940736.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|../../bcd2ssd.vhd|
 Z11 !s107 ../../bcd2ssd.vhd|
 !i113 1
@@ -39,9 +39,9 @@ R4
 DEx4 work 7 bcd2ssd 0 22 EKzX?oF8M0J18G>[`FVTb2
 !i122 4
 l22
-L20 31
-V?FDZ;aV`BbR;lYkWhLcFz3
-!s100 Kl7WTDF>Cb4e_RZKL7jC:3
+L20 32
+Ve2_U_Wd;5kPlPi3aA82Qh0
+!s100 92W;fobClT8UCnOd38XO>2
 R7
 31
 R8
@@ -139,7 +139,7 @@ R21
 R12
 R13
 Erelogio
-Z22 w1734365177
+Z22 w1737940660
 R2
 R3
 R4
@@ -149,8 +149,8 @@ Z23 8../../relogio.vhd
 Z24 F../../relogio.vhd
 l0
 L7 1
-Vnzb]?9U3COMa9^EHWF7OG1
-!s100 Do8MMT[W]_kQOMG<DMROV1
+V`a[i6]cXkEhGRDhN[RAe91
+!s100 cXC=dzF9zig_1aGRMdmcE1
 R7
 31
 R8
@@ -165,12 +165,12 @@ Atop_level
 R2
 R3
 R4
-Z26 DEx4 work 7 relogio 0 22 nzb]?9U3COMa9^EHWF7OG1
+Z26 DEx4 work 7 relogio 0 22 `a[i6]cXkEhGRDhN[RAe91
 !i122 7
 l78
 Z27 L31 187
-Z28 VSIfWk]II`LMPblfZ6d9hH2
-Z29 !s100 hIOXUS0@34ELIIX4c^Uj=1
+Z28 V8aB15=`XFG_GV`6ESY]9c3
+Z29 !s100 618Z<F?oNAXXXHIgzIUSO0
 R7
 31
 R8

@@ -10,62 +10,99 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/relogio.vhd}
+# vcom -93 -work work {C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/relogio.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:06:45 on Dec 16,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/relogio.vhd 
+# Start time: 22:18:36 on Jan 26,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/relogio.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity relogio
 # -- Compiling architecture top_level of relogio
-# End time: 13:06:45 on Dec 16,2024, Elapsed time: 0:00:00
+# End time: 22:18:36 on Jan 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/divisorClock.vhd}
+# vcom -93 -work work {C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/divisorClock.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:06:45 on Dec 16,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/divisorClock.vhd 
+# Start time: 22:18:37 on Jan 26,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/divisorClock.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity divisorClock
 # -- Compiling architecture arquitetura of divisorClock
-# End time: 13:06:46 on Dec 16,2024, Elapsed time: 0:00:01
+# End time: 22:18:37 on Jan 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/contador.vhd}
+# vcom -93 -work work {C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/contador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:06:46 on Dec 16,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/contador.vhd 
+# Start time: 22:18:37 on Jan 26,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/contador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity contador
 # -- Compiling architecture arquitetura_contador of contador
-# End time: 13:06:46 on Dec 16,2024, Elapsed time: 0:00:00
+# End time: 22:18:37 on Jan 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/bcd2ssd.vhd}
+# vcom -93 -work work {C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/bcd2ssd.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:06:46 on Dec 16,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/repo/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/bcd2ssd.vhd 
+# Start time: 22:18:37 on Jan 26,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/thays/Desktop/relELd/ELD_IFSC/Avaliacoes/RELOGIOS/Relogio24-ELD/contador_restored/bcd2ssd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity bcd2ssd
 # -- Compiling architecture seven_segments of bcd2ssd
-# End time: 13:06:46 on Dec 16,2024, Elapsed time: 0:00:00
+# End time: 22:18:37 on Jan 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+vsim work.relogio(top_level)
+# vsim work.relogio(top_level) 
+# Start time: 22:18:40 on Jan 26,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.relogio(top_level)
+# Loading work.divisorclock(arquitetura)
+# Loading work.contador(arquitetura_contador)
+# Loading work.bcd2ssd(seven_segments)
+add wave -position end  sim:/relogio/CC_ACn
+add wave -position end  sim:/relogio/clk50MHz
+add wave -position end  sim:/relogio/rst_in
+add wave -position end  sim:/relogio/zopIn
+add wave -position end  sim:/relogio/stopIn
+add wave -position end  sim:/relogio/SSD_UNIHH
+add wave -position end  sim:/relogio/SSD_DEZHH
+add wave -position end  sim:/relogio/SSD_UNIMM
+add wave -position end  sim:/relogio/SSD_DEZMM
+add wave -position end  sim:/relogio/SSD_UNISS
+add wave -position end  sim:/relogio/SSD_DEZSS
+add wave -position end  sim:/relogio/clk_1sec
+add wave -position end  sim:/relogio/clk_1min
+add wave -position end  sim:/relogio/clk_1hr
+add wave -position end  sim:/relogio/rst
+add wave -position end  sim:/relogio/bcd_unihh
+add wave -position end  sim:/relogio/bcd_dezhh
+add wave -position end  sim:/relogio/bcd_unimm
+add wave -position end  sim:/relogio/bcd_dezmm
+add wave -position end  sim:/relogio/bcd_uniss
+add wave -position end  sim:/relogio/bcd_dezss
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: aluno  Hostname: sje-lin-sidi-918566  ProcessID: 33409
+#           Attempting to use alternate WLF file "./wlftxdheg8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxdheg8
 do tb_relogio.do
 # ** Warning: (vlib-34) Library already exists at "rtl_work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:07:35 on Dec 16,2024
+# Start time: 22:18:56 on Jan 26,2025
 # vcom -reportprogress 300 -93 -work work ../../bcd2ssd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -73,10 +110,10 @@ do tb_relogio.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity bcd2ssd
 # -- Compiling architecture seven_segments of bcd2ssd
-# End time: 13:07:35 on Dec 16,2024, Elapsed time: 0:00:00
+# End time: 22:18:56 on Jan 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:07:35 on Dec 16,2024
+# Start time: 22:18:56 on Jan 26,2025
 # vcom -reportprogress 300 -93 -work work ../../contador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -84,10 +121,10 @@ do tb_relogio.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity contador
 # -- Compiling architecture arquitetura_contador of contador
-# End time: 13:07:35 on Dec 16,2024, Elapsed time: 0:00:00
+# End time: 22:18:56 on Jan 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:07:35 on Dec 16,2024
+# Start time: 22:18:56 on Jan 26,2025
 # vcom -reportprogress 300 -93 -work work ../../divisorClock.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -95,10 +132,10 @@ do tb_relogio.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity divisorClock
 # -- Compiling architecture arquitetura of divisorClock
-# End time: 13:07:35 on Dec 16,2024, Elapsed time: 0:00:00
+# End time: 22:18:56 on Jan 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:07:35 on Dec 16,2024
+# Start time: 22:18:56 on Jan 26,2025
 # vcom -reportprogress 300 -93 -work work ../../relogio.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -106,10 +143,12 @@ do tb_relogio.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity relogio
 # -- Compiling architecture top_level of relogio
-# End time: 13:07:35 on Dec 16,2024, Elapsed time: 0:00:00
+# End time: 22:18:56 on Jan 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# End time: 22:18:58 on Jan 26,2025, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 2
 # vsim work.relogio(top_level) 
-# Start time: 13:07:35 on Dec 16,2024
+# Start time: 22:18:58 on Jan 26,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -120,13 +159,12 @@ do tb_relogio.do
 # Loading work.bcd2ssd(seven_segments)
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: aluno  Hostname: sje-lin-sidi-918566  ProcessID: 33409
-#           Attempting to use alternate WLF file "./wlftbbnhxb".
+#           Attempting to use alternate WLF file "./wlft0rv8rq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftbbnhxb
+#           Using alternate file: ./wlft0rv8rq
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /relogio/U1
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /relogio/U1
-run 1 hr
-# End time: 13:11:19 on Dec 16,2024, Elapsed time: 0:03:44
+# End time: 22:19:31 on Jan 26,2025, Elapsed time: 0:00:33
 # Errors: 0, Warnings: 4

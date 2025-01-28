@@ -16,6 +16,10 @@ entity relogio is
 		rst_in : in std_logic;
 	   zopIn: in std_logic;
 		stopIn : in std_logic;
+		
+		--Versao 2
+		Up_btt : in std_logic;
+		Down_btt : in std_logic;
 
 		-- Output ports
 		SSD_UNIHH : out std_logic_vector(6 downto 0);
@@ -67,12 +71,17 @@ architecture top_level of relogio is
 			uni: out std_logic_vector(3 downto 0);
 			dez :out std_logic_vector(3 downto 0);
 			clk_out : out std_logic
+			
+			--Versao 2
+			up: in std_logic;
+			down: in std_logic;
+			
 		);
 	end component;
 	
 	--declarando fios internos
 	
-	signal clk_1sec, clk_1min, clk_1hr, rst : std_logic;
+	signal clk_1sec, clk_1min, clk_1hr, rst: std_logic;
 	signal bcd_unihh, bcd_dezhh, bcd_unimm, bcd_dezmm, bcd_uniss, bcd_dezss : std_logic_vector(3 downto 0);
 	
 	begin
@@ -82,7 +91,7 @@ architecture top_level of relogio is
     U1: divisorClock
         generic map (
 
-            MAX=> 500000           
+            MAX=> 50000000          
         )
         port map (
             clk => clk50MHz,
@@ -102,7 +111,11 @@ architecture top_level of relogio is
             reset => rst,
             uni=> bcd_uniss,
             dez=> bcd_dezss,
-				clk_out => clk_1min
+				clk_out => clk_1min,
+				
+				--versao 2
+				up => Up_btt
+				down => Down_btt
         );
 
     -- BCD minutos
@@ -117,6 +130,10 @@ architecture top_level of relogio is
             uni=> bcd_unimm,
             dez => bcd_dezmm,
 				clk_out => clk_1hr
+				
+				--versao 2
+				up => Up_btt
+				down => Down_btt
         );
 
     -- BCD horas
@@ -131,6 +148,10 @@ architecture top_level of relogio is
             uni=> bcd_unihh,
             dez => bcd_dezhh,
 				clk_out => open
+				
+				--versao 2
+				up => Up_btt
+				down => Down_btt
         );
 
     -- Display de 7 segmentos
