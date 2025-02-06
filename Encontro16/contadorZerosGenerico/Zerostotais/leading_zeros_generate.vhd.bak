@@ -1,0 +1,30 @@
+-- quantos zeros tem em um vetor de entrada Data antes do primeiro bit '1'  10/11
+
+library ieee;
+ use ieee.std_logic_1164.all;
+entity leading_zeros_generate is
+	generic (N : natural := 8);
+	port
+		(	data : in std_logic_vector(0 to N-1);
+			zeros	: out integer range 0 to N
+		);
+end entity;
+
+architecture ifsc_v1 of leading_zeros is
+
+label1: 
+	for k in N-1 downto 0 generate
+		d(k) <= q(k+1);
+		
+	end generate;
+	
+		q(N) <= d_in;
+
+	
+	--output	
+	q_out <= q(0);
+	
+end architecture;
+
+
+	
